@@ -1,0 +1,25 @@
+{
+  "id": "deep_space_unlock",
+  "title": "Earth Clearance: Deep Space Unlocked",
+  "theme": "deep_space",
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "deep_space_earth_message",
+      "text": "Incoming Priority Message from Earth Mission Control: All Martian Arctic data from Phoenix is logged and verified! Explorer Crew, you are officially cleared to unlock and explore Deep Space!"
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "deep_space_earth_message",
+      "text": "Meow!! Did you hear that message from Earth?! Mission Control just unlocked our Deep Space navigation corridor—beyond Mars, past the Asteroid Belt, all the way out to the outer giant worlds!"
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "ds_pioneer_jupiter",
+      "text": "I'm locking the navigation console coordinates for Deep Space right now! Hang onto your whiskers, explorers—our console is about to travel through Deep Space to humanity's very first Deep Space mission: Pioneer 10 and 11!"
+    }
+  ]
+}

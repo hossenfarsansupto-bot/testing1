@@ -1,0 +1,146 @@
+{
+  "id": "after_climax",
+  "title": "Scenic Return Journey",
+  "theme": "home_stretch",
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "after_jupiter_intro",
+      "text": "Now, I believe my nerves, and yours, deserve some fresh air. Metaphorically speaking. In fact, let me tell you some fun facts about Jupiter to make your return journey a little more enjoyable."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "after_jupiter_intro",
+      "text": "Jupiter is the largest planet in our Solar System, more than twice as massive as all the other planets combined. About 1,300 Earths could fit inside it, which makes it the biggest suitcase in the neighbourhood."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "after_jupiter_surface",
+      "text": "It has no solid surface, so landing is out of the question. Even if you could, rule number two would apply, and I would not allow anyone to touch anything."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "after_jupiter_red_spot",
+      "text": "That giant red eye you can see is the Great Red Spot, a storm wider than Earth that has been raging for centuries. It is, I believe, the longest-running argument in the Solar System."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "after_jupiter_spin",
+      "text": "Jupiter also spins once in under ten hours, giving it the shortest day of any planet. Cats sleep twelve to sixteen hours a day, so on Jupiter I would sleep through an entire day, which is frankly my dream."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "after_jupiter_moons",
+      "text": "And it has nearly a hundred moons, including Io with its volcanoes and Europa with its possible hidden ocean. Jupiter collects moons the way I collect cardboard boxes."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "after_jupiter_radiation",
+      "text": "Yes, it also has fierce radiation, which Pioneer 10 survived long ago. After today, I feel a certain kinship with that brave little scout."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "after_deceleration_timer",
+      "text": "Ship deceleration in progress. Estimated time to reach safe steering speed: 29 minutes."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "after_deceleration_timer",
+      "text": "Enjoy the view, explorers. Take all the photographs you like. I will be right here, and this time, I will keep an eye on the sky."
+    },
+    {
+      "type": "stage",
+      "mediaCue": "after_deceleration_timer",
+      "text": "After a while..."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "after_asteroid_belt",
+      "text": "Ship velocity within safe steering limit. Manual navigation restored. Radiation levels: normal."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "after_asteroid_belt",
+      "text": "With that said, my fellow humans, I believe we have passed Jupiter and are currently moving through the asteroid belt between Jupiter and Mars. This is quite a peculiar place in our solar system. Did you know that despite what every sci-fi movie suggests, the belt is mostly empty space, with rocks drifting hundreds of thousands of kilometres apart, so flying through it feels less like dodging bullets and more like a long, quiet drive with the occasional pebble? Even better, all of its asteroids put together weigh far less than our Moon, and about a third of that belongs to a single dwarf planet, Ceres, which makes Ceres the landlord of the entire neighbourhood."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "after_asteroid_crackle",
+      "text": "Do forgive my voice if it crackles a little, explorers. A few of my circuits are still grumbling about the radiation, and I am told the repairs will take some time. The grumbling is mostly from my left ear, and cats are known for their sensitive ears. But I would much rather keep talking than sit in silence. Talking keeps the worry away, for you and, if I am honest, for me too."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "after_asteroid_joke",
+      "text": "We’re nearly through the belt without any issues. You know my dear humans, sometimes I wonder, if there are so many rocks floating in our solar system, in some parallel world, could there be papers and scissors floating around as well? However, if all the parallel worlds played against each other in a rock-paper-scissors 1v1 arena, I have no doubt that our universe would win. That’s because we totally rock! Big time!"
+    },
+    {
+      "type": "stage",
+      "mediaCue": "after_asteroid_joke",
+      "text": "Felice chuckles. A few explorers laugh. Then the rest follow, and the chamber finally feels warm again."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "after_mars_distant",
+      "text": "There it is. That is the sound I was hoping to hear. Laughter is the best radiation shield I know, though I would not recommend it as a replacement for the real thing. If you look closely explorers, we’re past the asteroid belt, and the faint red blob you see in the distance isn’t another random rock, it’s the Mars, the one we visited already."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "after_mars_distant",
+      "text": "I must admit, it is rather comforting to see that familiar red dust again after a day like this. Home is not far now, my dear humans. You know what explorers, since we’re in the mood, there was one destination on mars that we didn’t cover in our mars trip, since we don’t have clearance to visit that site yet. However, that doesn’t stop me from telling you about it. Care to listen, explorers?"
+    },
+    {
+      "type": "choice",
+      "mediaCue": "after_mars_distant",
+      "prompt": "Care to listen to the story of the unvisited Mars site from inside the ship?",
+      "options": [
+        {
+          "label": "Yes.",
+          "response": [
+            {
+              "type": "stage",
+              "mediaCue": "remote_phoenix_observation",
+              "text": "Felice brightens, his optic sensors glowing a little warmer than before."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "remote_phoenix_observation",
+              "text": "My pleasure."
+            }
+          ]
+        },
+        {
+          "label": "Can’t we just sneak in?",
+          "response": [
+            {
+              "type": "stage",
+              "mediaCue": "remote_phoenix_observation",
+              "text": "Felice’s ears twitch with delight."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "remote_phoenix_observation",
+              "text": "Haha, being a feline robot, I fully understand the compulsive force of curiosity. Though I’m afraid we’ll have to satisfy ourselves sometime later. I shall definitely email our stakeholders, suggesting them to commence extraterrestrial hide and seek games and sneaking missions to make our adventures more enjoyable in the future. For now though, I’ll tell you the story."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

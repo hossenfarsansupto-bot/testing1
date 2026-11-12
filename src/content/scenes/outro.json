@@ -1,0 +1,25 @@
+{
+  "id": "outro",
+  "title": "Homeward Hyperdrive",
+  "theme": "ship",
+  "endsStory": true,
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "deep_space_earth_message",
+      "text": "Navigation Update: Hyperdrive remains engaged on Earth return course. We will reach Earth soon."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "deep_space_earth_message",
+      "text": "Sit back and relax, explorers — our hyperdrive is locked steady and we will reach Earth soon! Thank you for exploring the Moon, Mars, and Deep Space with me today. Remember, whatever journey you take next, you guys are, truly, the stars of the universe…"
+    },
+    {
+      "type": "stage",
+      "mediaCue": "deep_space_earth_message",
+      "text": "THE END."
+    }
+  ]
+}

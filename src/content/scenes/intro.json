@@ -1,0 +1,126 @@
+{
+  "id": "intro",
+  "title": "Welcome Aboard",
+  "theme": "ship",
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "system",
+      "text": "Narrator unit online. Voice module calibrated. Connection established."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "Greetings, my fellow humans. I’m delighted to have you all onboard today. I sincerely hope you’ll enjoy the journey with me."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "I promise, I’ll do everything in my arsenal to make this a memorable experience of your lives."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "Allow me a quick scan of the room before we continue. I’m pleased to report that every one of you looks wonderfully ready for adventure. Or at least wonderfully caffeinated, as my sensors cannot always tell the two apart."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "But first, I should introduce myself. Ehem, where are my manners?"
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "Oh there it is, manners.cmd was found. Loading manners::intro()"
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "Manners loaded successfully. I’ll do my best not to misplace them again, though I make no promises about anything sitting near the edge of a table."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "Yeah, Ehem….."
+    },
+    {
+      "type": "stage",
+      "text": "Awkward silence"
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "I, my dear humans, am an automated android, SN07291958 from the Exclusive Custom Series “Feline” to be precise, further modified and trained for intergalactic tourism, hospitality, human assistance and MWAIST (Milky Way Association for Interplanetary Safe Travel) Protocols."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "I am named “FELI LIC ZRSNT67”, but for simplicity’s sake, please call me Felice."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "Yeah, I know, it’s a mouthful. My engineers seem to have been paid by the character count in my name, but I have decided to forgive them. Felice is far kinder to everyone’s memory banks, mine included."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "As a specialized android from the Exclusive Feline series designed to honor \"Félicette\" (The first cat in space), I am excited to be your tour guide and exploration assistant for today’s journey."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "As you’re already aware, today we’re exploring abandoned human-made hardware that’ve been stranded after serving humanity and powering its scientific growth."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "A small history lesson, if you’ll indulge me. In October 1963, Félicette, a little Parisian stray cat, was launched into space aboard a rocket. She felt the weightlessness, admired the view, and came home safely, which is more than can be said for most cats and most curtains."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "Now, coming back to our adventure,"
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "Our destinations today include the Moon (Earth’s only satellite), Mars (the closest planet to humanity’s home in the planetary system) and some peculiarly distant places in deep space."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "Rest assured, I have packed for all of them. Well, almost all of them. The matter of the shuttle’s snack drawer is still being negotiated with the budget department."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "Before we begin though explorers, please keep the following safety measures always at the back of your minds.",
+      "list": [
+        "While exploring, please do not wander off too far from our shuttle. Please maintain contact with our network at all times.",
+        "Please do not directly touch, smell or taste anything on foreign territory, since it risks undetected contamination, toxicity or allergic reactions.",
+        "We’re monitoring everyone’s physical conditions (bp, sugar levels, cortisol levels etc) and the environmental conditions (Temperature, pressure, radiation levels etc) at all times. Please let us know if you ever feel any inconvenience."
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "Rule number two is, regrettably, aimed at the curious among you. I know, I know, the shiny alien rock looks irresistible. As a Feline, I understand the urge to poke things better than anyone, but we shall behave like professionals."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "In short, if something feels off, please notify the crew immediately."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "And with that, explorers, let’s buckle up. Initiating hyperdrive launch in t minus 1200 milliseconds."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "text": "Hyperdrive spooling up. Navigation console unlocked."
+    }
+  ]
+}

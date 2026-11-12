@@ -1,0 +1,333 @@
+{
+  "id": "moon_alsep",
+  "title": "Apollo ALSEP Station",
+  "theme": "moon",
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "alsep_hadley_opening",
+      "text": "Short-range hop initiated. Destination: Apollo 15 site, Hadley Rille. Wellness check: all explorers present, hydrated and, according to cortisol readings, still delighted."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_hero_reveal",
+      "text": "Welcome back to Hadley, explorers. I did promise we would visit the powered neighbours of those mirrors, and here they are: a small cluster of boxes, cables and antennas, standing quietly in the dust. This, my dear humans, is ALSEP, the Apollo Lunar Surface Experiments Package."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_orbital_context",
+      "text": "Think of it as a laboratory that the astronauts left running when they went home. Not a field trip, not a weekend project, but a whole family of instruments built to stay on, listen to the Moon and phone their findings back to Earth for years. Between 1969 and 1972, astronauts from five Apollo missions set these stations up across the lunar surface."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_hero_reveal",
+      "text": "A small correction for the record, because the engineers among you will have noticed. Apollo 11 carried a simplified starter kit called EASEP, which is where our mirror rode along, so the full ALSEP began with Apollo 12 and continued through Apollo 14, 15, 16 and 17. Not every mission carried the same instruments, but Apollo 15 brought all five of today’s stars."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_hero_reveal",
+      "text": "So why does this matter? Until ALSEP, exploring the Moon meant a short visit. A visit tells you what the Moon is doing on a particular afternoon, but a station tells you what it does through every day, night and solar tantrum. In other words, humanity gave the Moon something like a nervous system: sensors, wiring and a line back to Earth."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_hero_reveal",
+      "text": "At the centre of each site sits the Central Station, part power hub, part radio, part mission control, all squeezed into one box. It collected data from every instrument, packaged it, beamed it home, and listened for commands in return. Controllers could change an instrument’s mode from hundreds of thousands of kilometres away, which I consider the most respectable form of remote working."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_hero_reveal",
+      "text": "And the wiring was laid by hand. Astronauts in bulky suits had to run cables across uneven ground without yanking connectors or nudging delicate instruments. Imagine setting up a home theatre in oven mitts, on the Moon, with a limited oxygen supply."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_snap27",
+      "text": "Then came the power puzzle. Solar panels seem obvious, but a lunar night lasts about fourteen Earth days, which would demand enormous batteries and heroic thermal control. So NASA chose a small nuclear generator instead, a radioisotope thermoelectric generator called SNAP-27."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_snap27",
+      "text": "Inside, plutonium-238 decays quietly and produces heat, and thermoelectric elements turn that temperature difference directly into electricity. No turbines, no moving parts, no fuel to burn. It produced roughly seventy watts when new, about what an old-fashioned bright bulb would draw, so every instrument had to be a careful miser."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_fuel_transfer",
+      "text": "Here is my favourite detail. The fuel travelled in a protective cask, and once the station was in place, an astronaut had to transfer the capsule into the generator using a special tool. Yes, the oven-mitt situation again, only this time with plutonium and the knowledge that a dropped tool is a very bad afternoon."
+    },
+    {
+      "type": "choice",
+      "mediaCue": "alsep_quiz_night",
+      "prompt": "Felice has a question for you. How long does a lunar night last?",
+      "options": [
+        {
+          "label": "About 14 hours",
+          "correct": false,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_quiz_night",
+              "text": "Fourteen hours would be a gift, but the Moon likes to take its time. The answer is about fourteen Earth days, which is exactly why solar panels were a poor idea."
+            }
+          ]
+        },
+        {
+          "label": "About 14 Earth days",
+          "correct": true,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_quiz_night",
+              "text": "Correct, and I am pleased. Two weeks of darkness is a long time to sit in the cold, which is why NASA chose a generator that never needs sunlight."
+            }
+          ]
+        },
+        {
+          "label": "About 14 Earth years",
+          "correct": false,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_quiz_night",
+              "text": "Years would turn the Moon into a very sleepy place, wouldn’t it? The answer is about fourteen Earth days, which is still plenty of time to ruin anyone’s solar plans."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "menu",
+      "mode": "visitAll",
+      "mediaCue": "alsep_instrument_menu",
+      "prompt": "Four primary instruments detected. Please select an instrument to inspect. After each, you will return to this menu until all four have been visited.",
+      "options": [
+        {
+          "id": "pse",
+          "label": "Passive Seismic Experiment",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_pse_photo",
+              "text": "Ah, the seismometer, the Moon’s ear. It tracked the movement of a suspended mass relative to its housing, then converted that tiny motion into an electrical signal for Earth. It was so sensitive that it could pick up astronaut footsteps nearby, which is wonderful if you are a scientist and terrible if you were hoping to sneak around."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_pse_photo",
+              "text": "As a Feline unit, I feel a certain kinship with anything that senses the world through vibration. And the Moon did not disappoint: scientists found deep moonquakes tied to Earth’s tidal tugs, shallow ones, thermal ones as the surface heated and cooled, and impacts from space rocks. Many deep moonquakes repeated from the same spots, as if the Moon had a few favourite places to shiver."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_pse_seismogram",
+              "text": "NASA also tested the Moon on purpose. After missions, spent rocket stages and lunar module ascent stages were steered into the surface at known places and times, giving scientists a controlled thump to listen to. The signals rang on far longer than they would on Earth, because the dry, cracked lunar crust scatters seismic waves like a pinball in an arcade machine."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_pse_seismogram",
+              "text": "From those echoes, scientists inferred a layered interior and a core with a liquid part. That should ring a bell, if you remember what our mirrors hinted at earlier. Two completely different methods, one conclusion: the Moon’s heart is not entirely cold."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "alsep_pse_seismogram",
+              "text": "Seismometer logged. Returning to instrument menu."
+            }
+          ]
+        },
+        {
+          "id": "lsm",
+          "label": "Lunar Surface Magnetometer",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_lsm",
+              "text": "Next, the magnetometer, whose job was to find out whether the Moon has a magnetic personality. Earth’s strong field is generated by liquid iron stirring in its outer core, and it helps shield us from charged particles arriving from the Sun. The Moon’s global field today is extremely weak."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_lsm",
+              "text": "But Apollo rocks told a different story, because some samples carried ancient magnetisation. So either the Moon once had a stronger field, perhaps from a dynamo billions of years ago, or something else, such as impacts, magnetised those rocks."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_lsm",
+              "text": "The magnetometers on Apollo 12, 15 and 16 tracked the field in three dimensions over time. They found that the Moon is patchy rather than organised, with some regions magnetised far more strongly than their surroundings. Think of a world with no compass, but a handful of fridge magnets scattered at random, each one preserving a clue about its past."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "alsep_lsm",
+              "text": "Magnetometer logged. Returning to instrument menu."
+            }
+          ]
+        },
+        {
+          "id": "sws",
+          "label": "Solar Wind Spectrometer",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_sws_anim",
+              "text": "The Solar Wind Spectrometer turned the Moon into a particle catcher’s mitt. The Sun constantly sheds charged particles, mostly protons and electrons, and Earth is shielded by its magnetic field and atmosphere. The Moon has neither, so the solar wind simply lands on it, like rain on someone with no umbrella and no roof."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_sws_anim",
+              "text": "The instrument used electric fields to sort incoming particles by their energy per charge, measuring their density, direction and energy. It flew on Apollo 12 and 15. A separate experiment took a simpler route, exposing metallic foils to trap particles and bring them home for laboratory analysis, basically a very patient fishing net for the Sun."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_sws_anim",
+              "text": "Some of those particles bury themselves into lunar grains and stay for ages. Which means the soil here is quietly keeping a diary of the Sun, one proton at a time."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "alsep_sws_anim",
+              "text": "Solar wind spectrometer logged. Returning to instrument menu."
+            }
+          ]
+        },
+        {
+          "id": "hfe",
+          "label": "Heat Flow Experiment",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_hfe_photo",
+              "text": "The heat-flow experiment asked a deceptively simple question: how much warmth is leaking out of the Moon? Every planet keeps heat from its formation and from radioactive decay, and that heat reveals its composition and history. On Earth, it drives volcanoes and moves continents."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_hfe_schematic",
+              "text": "To measure it, Apollo 15 and 17 astronauts drilled holes about 2.3 metres deep and slid in probes with temperature sensors at different depths. They also installed heating elements to see how well the surrounding soil conducts heat. Apollo 16 carried one too, but deployment trouble prevented proper results, which I like to think was the Moon’s way of saying “not today”."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "alsep_hfe_schematic",
+              "text": "The verdict: heat does flow outward, but at a lower rate than on Earth. Drilling disturbed the soil, so the data had to be carefully corrected. Still, a hole about as deep as a tall doorway gave us some of the first direct measurements of heat escaping from another world."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "alsep_hfe_schematic",
+              "text": "Heat flow experiment logged. Returning to instrument menu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "alsep_dust_unlock",
+      "text": "All primary instruments inspected. Special instrument unlocked: Lunar Dust Detector."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_dust_unlock",
+      "text": "And now the one I have been saving, because it is personal. The Lunar Dust Detector, flown on Apollo 12 and 15, was modest: solar cells and temperature sensors, watched closely from Earth. If the cells produced less electricity than expected, scientists could tell that dust and exposure were taking their toll."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_dust_accumulation",
+      "text": "Astronauts had already learned that lunar dust is trouble. It clings to suits, coats equipment and fouls mechanisms. And it is nothing like gentle household dust: it is sharp, never rounded by wind or water, and it can pick up electric charge from sunlight."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_dust_accumulation",
+      "text": "Remember the fading signals from our mirrors? Same suspect, different crime scene. The detector was no sophisticated particle counter, more like a patient watching a window slowly fog over. But it taught NASA an early lesson that every future lunar base, rover and spacesuit will have to learn again."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_closing_hadley",
+      "text": "Now, about the ending. ALSEP was designed to work for at least a year, and some instruments kept going for almost eight. On September 30, 1977, NASA deliberately sent the final commands and the stations fell silent. As you heard earlier, our mirrors did not get the memo."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_closing_hadley",
+      "text": "It was not a failure. Generators slowly lose output, parts age, and eventually the cost of keeping a ground network alive outweighs the value of more data. The plutonium itself could have supplied heat for decades longer, with a half-life of about 87.7 years, but the budget and the hardware ran out of patience first."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_closing_hadley",
+      "text": "Everything stayed exactly where the astronauts placed it. Five landing sites still hold their silent observatories, cables and antennas, resting in the dust like a very dedicated but very quiet audience."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_lro_retracing",
+      "text": "But the story did not end there. ALSEP’s data lives on in NASA’s archives, including the Planetary Data System, where modern scientists revisit it with better techniques and models. A seismogram recorded in 1971 can still help someone refine an interior model of the Moon this decade, so ALSEP has really had two lifetimes: one on the Moon, one in the archive."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_lro_retracing",
+      "text": "Rocks tell you what the Moon is made of, while stations tell you how it behaves. You need both, the way a doctor needs both a blood test and a stethoscope."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_lro_retracing",
+      "text": "Look around once more, explorers. Everything here was carried, dragged, unpacked and connected by two people in suits, with limited oxygen and limited time. They left the footprints; ALSEP left the record."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_lro_retracing",
+      "text": "That is what moves me about this place. Apollo proved humans could walk on the Moon, and ALSEP proved we could keep a scientific presence there long after we left. The stations have been silent since 1977, yet their findings still echo through planetary science."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "alsep_lro_retracing",
+      "text": "And I will say this as a cat. Leaving a very expensive set of ears behind to listen for years, then heading home for a nap, is quite possibly the most feline thing humanity has ever done."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "alsep_lro_retracing",
+      "text": "ALSEP tour complete. Data log updated. Moon destinations completed: 2 of 2. Explorer cortisol: normal. Excitement: still persisting."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "alsep_lro_retracing",
+      "text": "Please pick the destination you’d like to visit:",
+      "list": [
+        "Moon (completed)",
+        "Mars",
+        "Deep space"
+      ]
+    }
+  ]
+}

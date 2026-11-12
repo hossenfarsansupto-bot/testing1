@@ -1,0 +1,183 @@
+{
+  "id": "mars_phoenix_met",
+  "title": "Remote Story: Phoenix Weather Station (MET)",
+  "theme": "ship",
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "remote_phoenix_observation",
+      "text": "Archive access granted. Subject: Phoenix Mars Lander, Meteorological Station (MET). Note: this site is not currently cleared for visits. Storytelling mode: enabled."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_overview",
+      "text": "Wonderful. Please settle in and picture this, explorers. A small robot is standing alone on the freezing northern plains of Mars. It is not drilling and it is not driving, but it is quietly doing something most of us take for granted: checking the weather."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_overview",
+      "text": "This was the Meteorological Station of the Phoenix lander, the same Phoenix whose digging and soil labs we explored earlier. Think of it as the lander’s weather department, with three instruments, one mast, and zero television presenters. It was built by a Canadian-led team, with help from Finland, Denmark and several universities, so I assume it apologised politely to every dust devil that passed by."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_thermocouples",
+      "text": "Let me begin with the thermometer. It was actually three tiny thermocouples at different heights on a one-metre mast, each made of thin wires about as thin as a human hair. Two different metals were welded together, and when their junctions sat at different temperatures, they produced a tiny voltage. That is the Seebeck effect, which means Phoenix measured Mars’s air by listening to a very small electrical whisper."
+    },
+    {
+      "type": "choice",
+      "mediaCue": "phoenix_met_thermocouples",
+      "prompt": "System: Felice has a question for you. Early in the mission, the upper sensor typically peaked in the early afternoon at what temperature?",
+      "options": [
+        {
+          "label": "About +20 degrees Celsius",
+          "correct": false,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_met_thermocouples",
+              "text": "I admire the optimism, and I would also like to book that holiday. Sadly, it was far colder than that, about minus 30 degrees Celsius. On Mars, that counts as a hot afternoon."
+            }
+          ]
+        },
+        {
+          "label": "About minus 30 degrees Celsius",
+          "correct": true,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_met_thermocouples",
+              "text": "Correct, and nicely done. About minus 30 degrees Celsius at the peak, which is basically Martian beach weather. Please do not remove your coats."
+            }
+          ]
+        },
+        {
+          "label": "About minus 130 degrees Celsius",
+          "correct": false,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_met_thermocouples",
+              "text": "That would be a rough day, and the nights were certainly colder. But in the early afternoon, the upper sensor reached about minus 30 degrees Celsius. For Mars, that is practically a heatwave."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_thermocouples",
+      "text": "And the temperature never sat still. The readings jumped by around 10 degrees in short moments, a sign of turbulence as warm air bubbled up from the heated ground. Mars’s thin air does not behave like a calm lake, it behaves like a very restless pot of soup. There was also a tiny detective story hiding in the data. The lowest sensor sometimes read slightly warmer than expected, because the lander’s own deck and nearby instruments leaked a little heat. It is exactly like a cat sleeping on a laptop: the warmth is lovely, but it is hardly an honest measurement."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_pressure",
+      "text": "Now for the part I find most poetic: the pressure sensor. Designed by the Finnish Meteorological Institute, a team that knows a thing or two about weather, it took a reading every two seconds, and it carried two spare sensor heads to check on the main one. In case you are wondering, Mars’s air pressure here was about 860 pascals at the start, less than one percent of Earth’s."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_pressure",
+      "text": "Over the following months, it dropped to around 720 pascals. The reason is that as winter approached in the south, carbon dioxide froze onto the southern polar region, pulling gas out of the atmosphere. In other words, the whole planet was slowly breathing in, and Phoenix felt it through a sensor the size of a small gadget."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_pressure",
+      "text": "The pressure data also had tiny dips, brief drops that lasted only moments. Those were dust devils and other swirling vortices passing overhead. Imagine a robot noticing a miniature tornado simply because the air got slightly lighter for a second."
+    },
+    {
+      "type": "choice",
+      "mediaCue": "phoenix_met_telltale",
+      "prompt": "System: Felice has another question for you. How do you think Phoenix measured the wind?",
+      "options": [
+        {
+          "label": "With a tiny spinning windmill",
+          "correct": false,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_met_telltale",
+              "text": "A classic design, and a reasonable guess. But spinning parts are fragile in such a cold, dusty place, so the engineers did something cleverer. They hung a cylinder from fibres and photographed it."
+            }
+          ]
+        },
+        {
+          "label": "With a hanging cylinder photographed by a camera",
+          "correct": true,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_met_telltale",
+              "text": "Correct, and I am impressed. The instrument was called the Telltale, a lightweight cylinder suspended by Kevlar fibres. When the wind pushed it, the cylinder swung away from its resting position, and the lander’s camera took photographs of that swing."
+            }
+          ]
+        },
+        {
+          "label": "With Felice’s whiskers",
+          "correct": false,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_met_telltale",
+              "text": "I wish. Whiskers are excellent at sensing the faintest breeze, and I have complained to the committee that they were not considered. The real device was a cylinder hung from fibres, photographed by the lander’s camera."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_telltale",
+      "text": "Scientists then used the pictures to work out the wind’s speed and direction, based on the same drag force that pushes your hand when you stick it out of a car window. It took one measurement as often as once every 50 seconds, whenever the camera was free. This is probably the only weather station in history where the weather presenter was a camera."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_winds",
+      "text": "And the wind had moods. For the first couple of months, it blew steadily at around 3 to 6 metres per second, in a fairly repeatable daily pattern. Later in the mission, westerly winds became more common, daytime averages rose to around 8 metres per second, and the strongest gust, on sol 148, reached about 16 metres per second."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_winds",
+      "text": "Daytime winds were turbulent, while nights were calm and gentle. If you ask me, Mars sleeps better than most humans I know."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_legacy",
+      "text": "Now, let me tell you why I love this little weather station. It did not dig up ice or find perchlorate, and it did not make any headlines. It simply stood on the plains, day after day, collecting the quiet details that tell you what a place feels like."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_legacy",
+      "text": "Because of it, scientists could study how the Martian surface heated the air by day and cooled it by night, how the planet’s carbon dioxide travelled between the atmosphere and the poles, and how the winds shifted with the seasons. Its data covers sols 1 to 150, and it still sits in NASA’s Planetary Data System, waiting for any curious mind to open it."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_legacy",
+      "text": "The best part is that weather is the one thing every future explorer will care about. Before astronauts land on Mars, before rovers climb cliffs, before anyone hangs washing outside, someone needs to know whether it will be windy. Phoenix quietly wrote the first forecast."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_met_legacy",
+      "text": "So, explorers, I hope you enjoyed that little tale. A weather report from a place where the coat never comes off, the wind is measured by a hanging cylinder, and the planet occasionally holds its breath."
+    }
+  ]
+}

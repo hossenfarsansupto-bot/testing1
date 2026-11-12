@@ -1,0 +1,13 @@
+{
+  "id": "ds_ds1_nh_blocked",
+  "title": "Deep Space Course Check",
+  "theme": "deep_space",
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "ds_blocked_pair",
+      "text": "Let us pick another destination first, explorers, and save Deep Space 1 and New Horizons till last! We still have Pioneer and Voyager waiting for us."
+    }
+  ]
+}

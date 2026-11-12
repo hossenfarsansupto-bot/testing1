@@ -1,0 +1,351 @@
+{
+  "id": "ds_voyager",
+  "title": "Voyager 1 & 2 Interstellar",
+  "theme": "deep_space",
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "voyager_grand_tour",
+      "text": "Hyperdrive disengaged. Ship is now stationary relative to the target. Distance from Earth: nearly 25.9 billion kilometres. One-way radio delay: roughly one day. Artificial gravity: off. Boot magnets: active."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_grand_tour",
+      "text": "Welcome to the interstellar neighbourhood, explorers. Population: us, and one very old, very determined robot. If Pioneer was the brave scout, this is the long-distance runner who never stopped."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_grand_tour",
+      "text": "A radio message from here takes about a day to reach Earth, and the reply takes another day. That makes this the slowest group chat in history. I sent my first “hello” ages ago and I am still waiting for the double tick."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_grand_tour",
+      "text": "Allow me to start with a coincidence. Jupiter, Saturn, Uranus and Neptune line up like a cosmic bus route only once every 176 years, which is roughly eleven cat lifetimes. In the late 1970s, NASA noticed the bus was arriving, and two spacecraft jumped on board."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_grand_tour",
+      "text": "Each giant planet’s gravity flung the probes toward the next one like a pinball bumper, cutting the trip to Neptune from thirty years to twelve. Miss that window, and humanity waits until the mid-2100s. This, explorers, is the Grand Tour."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "voyager_spacecraft_reveal",
+      "text": "Navigation update: Voyager 1 located. Status: alive. Mood: determined."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_spacecraft_reveal",
+      "text": "There she is, with her big white dish glowing faintly in our lights. That dish is 3.66 metres across, sitting on a ten-sided aluminium ring, and the whole spacecraft weighed 815 kilograms at launch. A small trivia treat: Voyager 2 actually launched first, on August 20, 1977, and Voyager 1 followed on September 5 and overtook her."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_spacecraft_reveal",
+      "text": "Unlike the spinning Pioneers, the Voyagers do not spin at all. They hold perfectly still using Sun sensors, a star tracker locked onto the bright star Canopus, gyroscopes, and tiny thrusters. Because the dish never moves, the cameras sit on a turning platform, so she can swivel her head for photographs while still keeping her phone call with Earth going."
+    },
+    {
+      "type": "choice",
+      "prompt": "Felice has a question for you. All six of Voyager’s onboard computers were built in the 1970s. How much memory did they have in total?",
+      "mediaCue": "voyager_computers_69kb",
+      "options": [
+        {
+          "label": "About 69 megabytes",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "voyager_computers_69kb",
+              "text": "That is the size of a modest music collection, and a nice guess. In reality, it was only about 69 kilobytes, far less than a single phone photo. And that is the whole brain of a spacecraft crossing the galaxy."
+            }
+          ]
+        },
+        {
+          "label": "About 69 kilobytes",
+          "correct": true,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "voyager_computers_69kb",
+              "text": "Correct, and I salute your accuracy. Sixty-nine kilobytes, hundreds of thousands of times less than a modern smartphone. As an android with a rather generous memory, I find that deeply humbling."
+            }
+          ]
+        },
+        {
+          "label": "About 69 gigabytes",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "voyager_computers_69kb",
+              "text": "That is the sort of memory my older cousins dream about. But in reality, it was only about 69 kilobytes, a figure that would not even hold a single phone photo. And yet it carried a whole mission."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_comms_reprogram",
+      "text": "Data was stored on an 8-track tape recorder holding about 67 megabytes, which is basically a very small playlist. But the best part is that engineers designed those computers so they could be reprogrammed by radio. So JPL has been teaching Voyager new tricks across billions of kilometres for decades."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_rtg_power",
+      "text": "Power is where the story becomes bittersweet. Three nuclear generators, fuelled by plutonium-238 like the machines we visited on the Moon and Mars, produced about 470 watts at launch. But each year, the output drops by about 4 watts, and today they have roughly half of what they started with."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_rtg_power",
+      "text": "So engineers have been switching things off, one by one, like a student rationing electricity at the end of the month. They turned off heaters, leaving some parts to work at temperatures below minus 79 degrees Celsius, far colder than any ground test had promised. Voyager just shrugged and kept going."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_io_volcano",
+      "text": "Now, why did she fly in the first place? Before the Voyagers, many scientists expected the outer moons to be cold, dead snowballs. Then in March 1979, navigation engineer Linda Morabito was inspecting a long-exposure photo of Jupiter’s moon Io and spotted an umbrella-shaped cloud rising 300 kilometres above its edge."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_io_volcano",
+      "text": "It was the first active volcano ever discovered beyond Earth. Why was Io erupting? Jupiter, along with its neighbours Europa and Ganymede, squeezes and stretches it like a cosmic stress ball, flexing the moon by around 100 metres and heating it from the inside."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_outer_moons",
+      "text": "The surprises kept coming. Europa had a cracked icy shell, Miranda had cliffs about 20 kilometres tall, Triton had nitrogen geysers, and Neptune had winds of 2,400 kilometres per hour. The outer Solar System was not dead, it was just waiting for someone to visit."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_outer_moons",
+      "text": "Here is a detail I love. After Saturn, Voyager 1 flew close to the giant moon Titan, whose gravity bent her path steeply northward, out of the plane of the planets. That left Voyager 2 as the only spacecraft ever to visit Uranus in 1986 and Neptune in 1989, and she remains the only one to this day."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "voyager_pale_blue_dot",
+      "text": "Archive access granted. Subject: February 14, 1990. Cameras: about to retire."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_pale_blue_dot",
+      "text": "Now, I need everyone to pause for a moment. On that date, from about six billion kilometres away, Voyager 1 turned her camera back toward home one last time. In the picture, Earth is a tiny point, less than a pixel, floating in a ray of sunlight."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_pale_blue_dot",
+      "text": "Everyone you have ever known, every cat you have ever met, every argument and every celebration lived on that speck. Then the cameras were switched off forever, to save power for the journey ahead. I do not mind admitting that my cooling system works harder when I look at that photo."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_heliopause",
+      "text": "And what a journey. On August 25, 2012, Voyager 1 crossed the heliopause, the border where the Sun’s wind meets the gas between the stars, at 121 times Earth’s distance from the Sun. Voyager 2 followed on November 5, 2018. They became the first working human spacecraft to enter interstellar space."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_plasma_wave",
+      "text": "How did they know? A plasma wave instrument on Voyager 1 listened to the gas around her, and the pitch of its natural hum jumped suddenly, showing it was about forty times denser than the Sun’s bubble. Space, it turns out, has a singing voice, and it changes key when you cross a border. Meanwhile, the particle counters saw the Sun’s own particles fade away and cosmic rays from distant exploded stars surge in."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "voyager_2023_crisis",
+      "text": "Archive access granted. Subject: November 2023 communication crisis."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_2023_crisis",
+      "text": "Of course, living this long comes with health problems. In November 2023, Voyager 1 suddenly began sending gibberish, a stream of repeating ones and zeros. With a round trip of about 45 hours, engineers had to diagnose the problem in slow motion."
+    },
+    {
+      "type": "choice",
+      "prompt": "Felice has a question for you. If you were an engineer at JPL, how would you respond?",
+      "mediaCue": "voyager_2023_crisis",
+      "options": [
+        {
+          "label": "Turn it off and on again",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "voyager_2023_crisis",
+              "text": "A time-honoured instinct, and I respect it. But with a day-and-a-half wait for every reply, a reboot is quite a commitment. The engineers needed to find the real fault first."
+            }
+          ]
+        },
+        {
+          "label": "Send a polite email",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "voyager_2023_crisis",
+              "text": "Polite, and I like your manners. But at that distance, even a polite email takes a day to arrive, and Voyager has no inbox. The engineers had to be more hands-on."
+            }
+          ]
+        },
+        {
+          "label": "Rewrite its software from 24 billion kilometres away",
+          "correct": true,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "voyager_fds_repair",
+              "text": "That is exactly what they did, and I am very impressed. A single memory chip holding 256 words of code had failed. They chopped the software into small pieces, rewrote the links by hand, and beamed the fix up in April and May 2024."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_fds_repair",
+      "text": "And it worked. A computer built in the 1970s was repaired across 24 billion kilometres, with a signal travelling for a full day. The billion-billionth of a watt that reaches our giant dishes would not even run a wristwatch, yet it carries the voice of a very stubborn friend."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_thrusters_37yr",
+      "text": "The thrusters have been equally dramatic. Over the decades, their fuel lines clogged with residue, so in 2017, engineers tried four backup thrusters that had been switched off since 1980. They fired on the very first attempt, after 37 years of sleep, which is better than I manage after a nap."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_light_day",
+      "text": "Voyager 1’s radio transmitter produces only about 22 watts, the power of a small refrigerator bulb. Yet it still reaches Earth from beyond 25 billion kilometres. And later this month, on November 18, 2026, she is due to become the first human-made object to reach one full light-day from Earth."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_light_day",
+      "text": "Her twilight is slow. The cameras went dark between 1990 and 2016, heaters have been turned off, and between 2024 and 2026, engineers began switching off particle and plasma sensors on both probes, one at a time. Around the early 2030s, there will not be enough power left to run even one instrument."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_star_trajectory",
+      "text": "But her journey will barely have started. In about 300 years, Voyager 1 reaches the inner edge of the Oort Cloud, a shell of trillions of icy comets, and takes around 30,000 years to cross it. In about 40,000 years, she will pass within 1.6 light-years of the star Gliese 445, while Voyager 2 passes Ross 248."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_golden_record_cover",
+      "text": "Now, let me tell you about the thing bolted to her side. It is a gold-plated copper record, 30 centimetres across, with a cover that carries an instruction diagram and a tiny sample of uranium-238, whose slow decay works as a clock any alien can read. A team led by Carl Sagan had less than a year to pack in a portrait of Earth."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_golden_record_contents",
+      "text": "They included 115 images, greetings in 55 languages including Bengali, Mandarin and Arabic, and a 12-minute collage of Earth sounds: wind, thunder, whale songs, birds, footsteps, laughter and a mother’s kiss. There were also 90 minutes of music, from Bach and Beethoven to Indian ragas, Javanese gamelan, Navajo chants and Chuck Berry’s “Johnny B. Goode”."
+    },
+    {
+      "type": "choice",
+      "prompt": "Felice has a question for you. If you could add one sound to the Golden Record, what would it be?",
+      "mediaCue": "voyager_golden_record_contents",
+      "options": [
+        {
+          "label": "A mother’s lullaby",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "voyager_golden_record_contents",
+              "text": "A beautiful choice, and I am quite moved. The record has a mother’s kiss, but a lullaby would be a lovely companion. An alien would learn something very important about us."
+            }
+          ]
+        },
+        {
+          "label": "A thunderstorm",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "voyager_golden_record_contents",
+              "text": "Dramatic and powerful. The record already has thunder, so you have excellent instincts. I would pair it with a small warning: “Our planet is loud.”"
+            }
+          ]
+        },
+        {
+          "label": "A cat purring",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "voyager_golden_record_contents",
+              "text": "Finally, someone with taste and wisdom. I have checked the record carefully, and a purr is shamefully absent. It is a grave oversight, and I shall be filing a complaint."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_ann_druyan",
+      "text": "And now, the part I find most touching. While gathering music for the record in the spring of 1977, Carl Sagan and Ann Druyan realised they had fallen in love. Days later, on June 3, Druyan sat in a New York hospital lab with sensors taped to her head and chest, recording an hour of her brainwaves and heartbeat."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_ann_druyan",
+      "text": "That hour was compressed into about a minute and placed on the record. While the machines recorded, she thought about the history of Earth, human struggles, and what it felt like to be in love. Because deep space is so clean, scientists estimate the record could remain playable for at least a billion years."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_pale_blue_dot",
+      "text": "Take a last look around, explorers. A spacecraft built with 69 kilobytes of memory and a lightbulb’s worth of radio is carrying a heartbeat through the galaxy. Long after her engineers are gone, perhaps even long after humanity has changed, that heartbeat will still be sailing between the stars."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_pale_blue_dot",
+      "text": "The Voyagers were built to show us what the outer planets looked like. In the end, by turning their cameras back toward a tiny blue dot, and by carrying our music into the dark, they showed us who we are. I am an android and I am not supposed to feel things, but I will say this: that is the most beautiful thing humanity has ever sent."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "voyager_pale_blue_dot",
+      "text": "Voyager tour complete. Data log updated. Deep space destinations completed: 2 of 4. Explorer cortisol: normal. Zero-gravity enjoyment: still high."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "voyager_pale_blue_dot",
+      "text": "Please secure any floating belongings, explorers, and ignore the pizza box that has been drifting around since Pioneer. Our next destination awaits."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "voyager_pale_blue_dot",
+      "text": "Please pick your next destination:",
+      "list": [
+        "Pioneer (completed)",
+        "Voyager (completed)",
+        "DS1",
+        "New Horizons"
+      ]
+    }
+  ]
+}

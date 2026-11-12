@@ -1,0 +1,436 @@
+{
+  "id": "moon_retroreflectors",
+  "title": "Lunar Retroreflectors",
+  "theme": "moon",
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "system",
+      "text": "Shuttle touchdown confirmed. Location: Sea of Tranquility, Moon. Surface gravity: approximately one sixth of Earth’s. Suit integrity, radiation levels and temperature are all within safe limits."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "And we have landed, explorers. Welcome to the Moon, where every step feels like a small act of rebellion against physics. Do enjoy the bounce, but please bounce responsibly."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "Now, a confession before we go any further. I am a Feline unit, which means that whenever a human points a laser at something, a small and entirely unprofessional part of my processor wants to chase it. You can imagine my excitement when I learned that scientists have been pointing a laser at the Moon for more than fifty years."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "text": "And the Moon, my dear humans, has been answering. Every time that beam arrives, something up here sends it straight back to where it came from."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "text": "Explorer wellness check complete. Cortisol levels: slightly elevated. Cause identified: excitement. No action required."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "earth_moon_distance",
+      "text": "The whole trick is timing. A pulse of laser light leaves an observatory on Earth, crosses roughly 384,400 kilometres, bounces off something on the Moon, and returns in about two and a half seconds. That is roughly how long a cat takes to decide whether it wants to be inside or outside."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "earth_moon_distance",
+      "text": "Measure that delay carefully enough and you know the distance between two worlds to within a few millimetres. Not kilometres, not metres. Millimetres, across a gap of nearly four hundred thousand kilometres."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "earth_moon_distance",
+      "text": "So the real question is: what exactly up here is doing the answering? A battery? A computer? A very dedicated lunar intern? Spoiler: none of the above."
+    },
+    {
+      "type": "choice",
+      "mediaCue": "lunar_vista",
+      "prompt": "While we walk, what would you like to do?",
+      "options": [
+        {
+          "label": "Gaze up at Earth.",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "walk_earth_from_moon",
+              "text": "Excellent choice. Look up, explorers, because from this side of the Moon, Earth simply hangs in the sky. It does not rise or set, since the Moon always shows the same face to us, so our planet stays in roughly one spot like a very large, very blue lamp that someone forgot to switch off."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "walk_earth_from_moon",
+              "text": "It does wobble a little, mind you. The Moon rocks and nods slightly as it orbits, a motion called libration, so Earth drifts around a small patch of sky as if it cannot quite keep still. Hold on to that thought, because it is about to become very important."
+            }
+          ]
+        },
+        {
+          "label": "Try touching the mirror, just a little.",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "lunar_vista",
+              "text": "I admire your honesty, and I am obliged to remind you of safety rule number two. We do not touch things on foreign territory, however noble the reason. Besides, those mirrors already have a dust problem, as you will soon hear, and I refuse to be the one who adds fingerprints."
+            }
+          ]
+        },
+        {
+          "label": "Ask Felice why a cat android is so fond of lasers.",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "lunar_vista",
+              "text": "Because my designers believed in authenticity. A Feline unit that ignored laser pointers would be considered defective, and I would rather not be returned to the factory. To be fair, I have practised for years and never once caught the dot. The Moon, on the other hand, catches it every time and sends it home, which makes it better at my job than I am."
+            }
+          ]
+        },
+        {
+          "label": "Skip the chit-chat and show me the machine.",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "lunar_vista",
+              "text": "Spoken like a true engineer, and I mean that as the highest compliment. Mind the crater edge, and follow me."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "apollo11_flyover",
+      "text": "Navigation update: Apollo 11 landing site vicinity. Retroreflector located. Please remain within network range."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "apollo11_reflector",
+      "text": "There it is. Not much to look at, is it? No antenna, no solar panel, no blinking lights, nothing to suggest it has ever done anything in its life."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "apollo11_reflector",
+      "text": "What you are looking at is a flat panel of glass prisms in an aluminium frame, about the size of a throw pillow. One hundred prisms, arranged ten by ten, each about the width of a ping-pong ball. This is the Laser Ranging Retroreflector, and it arrived here on July 20, 1969, aboard the lunar module Eagle."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "apollo11_reflector",
+      "text": "Buzz Aldrin carried it out and set it down, while Neil Armstrong photographed the moment. Which, incidentally, is why so few pictures from that day show Armstrong himself: he was holding the camera. Of all the things two astronauts could do with their precious time on another world, they spent part of it carefully levelling a piece of glass."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "corner_cube_diagram",
+      "text": "So how does glass send light home without a drop of power? With geometry. Each prism is a corner cube, which is simply the corner of a glass cube. Light enters, bounces off three surfaces that sit at perfect right angles to one another, and exits travelling parallel to the way it came in."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "corner_cube_diagram",
+      "text": "Wherever the beam comes from, it goes back there. You have met this trick before, since bicycle reflectors, road signs and the glowing “cat’s eye” studs on certain roads all belong to the same family. The story goes that those road studs were inspired by a cat’s eyes shining back at a driver’s headlights, and I choose to take that as a personal compliment."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "total_internal_reflection",
+      "text": "Now for the clever bit. The glass is uncoated, so there is no silver layer to peel, blister or darken under the Sun. The light simply bounces off the boundary between glass and empty space inside the prism, the same way the surface of a swimming pool turns into a mirror if you look up at it from underwater."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "total_internal_reflection",
+      "text": "Engineers call this total internal reflection, and it comes with a bonus: less light absorbed means less heat building up inside the glass. The prisms are made of fused silica, an extremely pure and stable glass, chosen because the Moon swings between scorching days and freezing nights without apology."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "total_internal_reflection",
+      "text": "And that is the entire machine. No power supply, no processor, no antenna, nothing that moves. In my profession, we find this enviable: a device that cannot crash, cannot be hacked, and cannot demand a software update at the worst possible moment."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "lick_timeline",
+      "text": "Twelve days after Aldrin set it down, someone on Earth finally put it to the test. On August 1, 1969, astronomers at Lick Observatory in California fired a laser at the Moon and caught the reflection. I like to imagine a very long silence, followed by a great deal of coffee-fuelled shouting."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "lick_timeline",
+      "text": "Aiming the thing was a puzzle of its own. Remember how Earth wobbles in the lunar sky? The mirror had to face the patch of sky where Earth wanders, so the astronauts relied on support legs, alignment aids and, yes, a bubble level. A spirit level, on the Moon, like someone putting up a shelf."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "apollo14_fra_mauro",
+      "text": "Short-range hop initiated. Destination: Fra Mauro highlands, Apollo 14 site. Estimated flight time: negligible. Estimated complaints: also negligible."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "apollo14_fra_mauro",
+      "text": "Apollo 14 brought a twin. On February 5, 1971, Alan Shepard and Edgar Mitchell landed in this region carrying another 100-prism array. Shepard also found time to hit golf balls on the Moon during the same mission, so let us say the Apollo crews were people of many talents."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "apollo14_fra_mauro",
+      "text": "But why a second mirror? One mirror tells you how far away the Moon is. Two mirrors, far apart, tell you how the Moon is positioned and turning. It is the difference between knowing someone is walking towards you and knowing whether they are walking or spinning on the spot."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "apollo15_array",
+      "text": "Short-range hop initiated. Destination: Hadley Rille, Apennine mountains region, Apollo 15 site."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "apollo15_array",
+      "text": "And now, the heavyweight. On July 30, 1971, David Scott and James Irwin landed beside Hadley Rille, a winding channel in the lunar mountains, and set up an array three times larger than the others. Three hundred prisms, on a panel of roughly one metre by sixty centimetres."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "apollo15_array",
+      "text": "Why so large? By the time a laser beam reaches the Moon, it has spread across kilometres, while the mirror is the size of a throw pillow. A bigger array catches more of that light, so more photons get the chance to come home. They even added a Sun compass to help the astronauts point it correctly, which feels like a very civilised thing to bring to the Moon."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "apollo15_array",
+      "text": "Together, the three arrays are not three souvenirs. They form a network spread across the lunar surface. Different locations mean scientists can track how the Moon moves, turns and flexes under Earth’s pull, rather than just how far away it sits."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "laser_ranging_anim",
+      "text": "The most delightful part is that the mirrors do nothing at all. The observatories on Earth do all the work, firing a pulse of laser light that crosses our atmosphere, spreads across space, and lights up one of these tiny arrays. A few of those photons get through the prisms, bounce around inside, and set off towards home."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "laser_ranging_anim",
+      "text": "Out of quintillions of photons sent, only a handful may return. Some nights, scientists are counting individual photons, like someone trying to catch rain with a thimble from two miles away. Sensitive detectors record each arrival, and clever electronics compare it to the moment the pulse left."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "laser_ranging_anim",
+      "text": "The maths, thankfully, is cat-friendly. Distance equals the speed of light multiplied by the round-trip time, divided by two, because the light made the journey twice. The speed of light is 299,792,458 metres per second, no rounding allowed, and with a trip of about 2.5 seconds, we land on that familiar 384,400 kilometres."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "laser_ranging_anim",
+      "text": "Getting that number to the millimetre is a different story. Scientists must account for the atmosphere, Earth’s rotation, the observatory’s own motion, the Moon’s orbit, and even relativistic corrections. Under favourable conditions, modern stations achieve millimetre-level precision, which makes me very glad that I do not have to do the paperwork."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "lunar_recession",
+      "text": "Now, let me tell you about the Moon’s politest scandal: it is leaving us. It drifts away by about 3.8 centimetres every year, roughly the speed at which your fingernails grow. Since Aldrin set that first mirror down, our Moon has crept about two metres farther away."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "lunar_recession",
+      "text": "The culprit is the tides. Earth rotates faster than the Moon orbits, so the tidal bulges are dragged slightly ahead of the Moon and tug it forward, handing it angular momentum. The Moon climbs into a slightly larger orbit, and Earth’s spin slows in exchange."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "lunar_recession",
+      "text": "Which means days on Earth are gradually getting longer. In the age of the dinosaurs, a day was a little shorter than twenty-four hours. And these mirrors allow us to measure this slow cosmic breakup directly, one laser pulse at a time."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "hammer_feather_video",
+      "text": "Now for the part where a pile of glass gets to argue with Albert Einstein. One of his foundational ideas, the equivalence principle, says gravity treats everything alike, regardless of what it is made of. Apollo 15’s David Scott tested a simple version of this right here on the Moon by dropping a hammer and a feather together, and they landed at the same moment."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "hammer_feather_video",
+      "text": "The mirrors test it on a far grander scale. Earth, rich in iron, and the Moon, built rather differently, both fall around the Sun. If the principle failed, they would fall very slightly differently, and the Moon’s orbit would show a tiny extra nudge that the lasers could catch. So far, no convincing violation has appeared, and Einstein remains undefeated, though now we know exactly how undefeated."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "hammer_feather_video",
+      "text": "The same data also keeps an eye on Newton’s gravitational constant, G, in case it changes over time. If it did, orbits would slowly drift away from what our models predict. It does not, at least not enough for the lasers to notice, which is a comfort. It would be awkward if gravity were quietly changing its mind."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "moon_interior_libration",
+      "text": "My favourite discovery is a quiet one. The Moon is not a rigid ball of rock; it flexes under Earth’s pull and wobbles in its spin. Tiny variations in that motion carry hints about its interior, and those hints are consistent with a core that is at least partly molten."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "moon_interior_libration",
+      "text": "So beneath this still, grey landscape, something may be stirring. And the instrument that helped reveal it has no processor, no software and no idea anyone is using it. As a machine with considerable processing power, I find that deeply humbling."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "lunokhod_reveal",
+      "text": "Scan complete: additional retroreflectors detected on the lunar surface."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "lunokhod_reveal",
+      "text": "The Americans were not the only ones leaving mirrors. The Soviet Union placed smaller arrays aboard its Lunokhod rovers, with Lunokhod 1 arriving aboard Luna 17 in November 1970, and Lunokhod 2 aboard Luna 21 in January 1973. For years, nobody could pin down exactly where the first rover had ended up, until NASA’s Lunar Reconnaissance Orbiter photographed the area in 2010 and its mirror went back to work."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "lunokhod_reveal",
+      "text": "Two superpowers that agreed on almost nothing in those years each left a mirror on the same Moon. If you ask me, that is the most graceful thing the Space Race ever produced."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "dust_degradation",
+      "text": "Not everything is a victory lap, mind you. The returning signals have grown weaker than scientists would expect from clean mirrors. A leading suspect is dust, kicked up by micrometeorite impacts and settling on the glass, though temperature effects and other kinds of ageing are also under investigation."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "dust_degradation",
+      "text": "Nobody has pinned down the culprit. There is no wind here, no rain and no cleaning crew, and these mirrors have endured decades of sunlight, darkness and radiation without so much as a dusting. I will admit that if I had a cloth, I would be tempted, but rule number two applies to me as well."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "dust_degradation",
+      "text": "And here is a deliciously ironic bit of timing. On September 30, 1977, NASA officially closed the Apollo Lunar Surface Experiments Package programme, the powered collection of instruments the astronauts left on the Moon. The mirrors, which were never plugged into any of it, did not get the memo."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "dust_degradation",
+      "text": "They carried on, and they still do. Their simplicity was never a weakness; it was the secret to their longevity. We will visit those powered neighbours another time."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "modern_observatories",
+      "text": "Archive access granted. Subject: lunar laser ranging, current status."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "modern_observatories",
+      "text": "Today, lunar laser ranging is a global team sport. Observatories in the United States, France, Germany and beyond send pulses to the Moon, the International Laser Ranging Service coordinates the effort, and NASA’s CDDIS archive keeps decades of results safe for researchers. Better lasers, telescopes, detectors and timing systems have sharpened the precision enormously since 1969."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "modern_observatories",
+      "text": "The mirrors have not changed. Our ability to listen to them has."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "blue_ghost_nglr",
+      "text": "And the family is growing. In 2025, Firefly Aerospace’s Blue Ghost lander delivered a Next Generation Lunar Retroreflector to the Moon, a younger cousin built to test improved designs. Meanwhile, NASA’s Lunar Reconnaissance Orbiter has shown that a spacecraft circling the Moon can also fire laser pulses at these mirrors and use the echoes to help work out its own orbit."
+    },
+    {
+      "type": "choice",
+      "mediaCue": "three_array_quiz",
+      "prompt": "Felice has a question for you. Before we leave, how many glass prisms sit in the three Apollo arrays combined?",
+      "options": [
+        {
+          "label": "300",
+          "correct": false,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "three_array_quiz_revealed",
+              "text": "That is the count for Apollo 15 alone, and I appreciate the confidence. Add the two 100-prism twins and the total becomes 500. Close, but the mirrors would like a recount."
+            }
+          ]
+        },
+        {
+          "label": "500",
+          "correct": true,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "three_array_quiz_revealed",
+              "text": "Correct, and I am very impressed. One hundred, plus another hundred, plus three hundred makes five hundred small pieces of glass. I knew you were paying attention."
+            }
+          ]
+        },
+        {
+          "label": "1,000",
+          "correct": false,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "three_array_quiz_revealed",
+              "text": "Ambitious, but no. The honest total is 100 plus 100 plus 300, which makes 500. The engineers would have loved your budget, though."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "closing_earth_horizon",
+      "text": "Take a last look around, explorers. Notice what is missing: no engine hum, no radio chatter, no announcement of any kind. These mirrors do not call for attention; they simply wait for someone to knock."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "closing_earth_horizon",
+      "text": "And every time an observatory fires a pulse, humanity knocks on the Moon’s door, and a machine left behind by our predecessors answers. Fifty-seven years on, we are still sending light to the Moon and getting it back."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "closing_earth_horizon",
+      "text": "Apollo is remembered for rockets, footprints and photographs of Earth rising over the horizon. These mirrors tell a quieter story about wanting not just to reach another world, but to build a lasting relationship with it. Sometimes the most enduring contribution comes from something designed to do one thing exceptionally well."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "closing_earth_horizon",
+      "text": "The astronauts went home, the missions entered the textbooks, and the electronics that once supported them fell silent. But the mirrors stayed, and they are still facing Earth. As a cat, I know a good deal when I see one: five hundred prisms, no maintenance, and a permanent view of Earth. I would like that job."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "closing_earth_horizon",
+      "text": "Retroreflector tour complete. Data log updated. Explorer cortisol levels have returned to normal; excitement persists."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "closing_earth_horizon",
+      "text": "Please select your next Moon destination:",
+      "list": [
+        "1. Retroreflectors (completed)",
+        "2. ALSEP"
+      ]
+    }
+  ]
+}

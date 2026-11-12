@@ -1,0 +1,361 @@
+{
+  "id": "mars_viking",
+  "title": "Viking 1 and 2",
+  "theme": "mars",
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "viking_arrival",
+      "text": "Shuttle touchdown confirmed. Location: Chryse Planitia, Mars. Surface gravity: about 38 percent of Earth’s. Air pressure: under one percent of Earth’s, so suits stay on, explorers, no exceptions."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_arrival",
+      "text": "Welcome to Mars, explorers. We are standing on Chryse Planitia, a name that means “Golden Plain”, and for once the name is quite fair. The ground is rusty, the sky is a dusty butterscotch, and the nearest neighbour is about 225 million kilometres from home."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_landing_date",
+      "text": "Allow me to give you a date. On July 20, 1976, exactly seven years after Apollo 11 touched down on the Moon, a spacecraft landed right here. Someone at NASA clearly enjoyed a good anniversary gift."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_landing_date",
+      "text": "That spacecraft was Viking 1, and it did not bring a single astronaut. It brought a laboratory, a robotic arm and the biggest question anyone had ever sent to another planet: is there life on Mars? We are about to meet the machine that asked."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_architecture",
+      "text": "Strictly speaking, Viking was four machines: two orbiters and two landers, working in pairs. The orbiters scouted the planet from above, photographed potential landing sites and relayed messages. The landers did the intimate work: touching the soil, tasting the air and sniffing for chemistry."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "viking_lander_reveal",
+      "text": "Navigation update: Viking 1 landing site located. Dust advisory: light. Please remain within network range."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_lander_reveal",
+      "text": "There it is, sitting exactly where it landed. A hexagonal aluminium body on three legs, about 657 kilograms of 1970s ingenuity, with two radioisotope generators on its sides. Yes, plutonium-238 again, the same trick as our Moon neighbours, because dust storms and solar panels are not good friends."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_lander_reveal",
+      "text": "And look at that arm. It scooped soil, delivered it to the instruments inside and did all this automatically. As a cat, I recognise the technique: scoop, inspect, bury. I merely lack the litter box."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_edl_sequence",
+      "text": "The landing was the real masterpiece. The lander had to hit the atmosphere at enormous speed, deploy a parachute, drop its heat shield, wake a radar altimeter and fire retrorockets, all alone. Radio signals take several minutes to cross between Earth and Mars, so nobody could grab a joystick and help."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_1_2_compare",
+      "text": "Viking 2 followed 45 days later, landing at Utopia Planitia about 6,460 kilometres away, so scientists could compare two different corners of the same planet. And remember, these machines ran on computing power weaker than a cheap modern calculator. I find that humbling, and slightly insulting to my processor."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_impact_scale",
+      "text": "Why does it matter? Before Viking, Mars was a blurry world of telescopes and flyby pictures. The Mariner missions had already hinted at giant volcanoes and canyons, but nobody had a working laboratory standing on the surface."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_impact_scale",
+      "text": "Then came Viking. The landers returned about 4,500 images from the surface, while the orbiters sent more than 52,000 and mapped about 97 percent of the planet. Mars stopped being a rumour and became a place."
+    },
+    {
+      "type": "menu",
+      "mode": "visitAll",
+      "mediaCue": "viking_lander_reveal",
+      "prompt": "Four lander systems available for inspection. Please select one. After each, you will return to this menu until all four have been visited.",
+      "options": [
+        {
+          "id": "met_boom",
+          "label": "Meteorology boom",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_met_boom",
+              "text": "Look at that slender arm reaching up from the lander. That is the meteorology boom, humanity’s first proper weather station on Mars. It held its sensors about 1.6 metres above the ground, far enough that the spacecraft’s own heat and airflow would not spoil the readings."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_met_boom",
+              "text": "It measured temperature, pressure, wind speed and wind direction. Wind was a special puzzle, since the Martian air is so thin that even fast gusts push surprisingly gently. Imagine a hurricane that feels like a very enthusiastic whisper."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_weather_seasonal",
+              "text": "The reports were not holiday-friendly, though. Temperatures plunged far below freezing, and the data showed daily swings and a seasonal rhythm in air pressure. In winter, carbon dioxide freezes onto the polar caps, and in spring it escapes again, so a whole planet breathes in and out once a year."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_weather_seasonal",
+              "text": "For the first time, humanity had a daily weather report from another world. Cold, windy, a chance of dust, and absolutely no one cancelling a picnic."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "viking_weather_seasonal",
+              "text": "Meteorology boom logged. Returning to instrument menu."
+            }
+          ]
+        },
+        {
+          "id": "seismometer",
+          "label": "Seismometer",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_seismometer_insight",
+              "text": "Ah, the seismometer, and with it comes a small tragedy. Its job was to listen for Marsquakes, the way the Apollo instruments listened to the Moon. The delicate moving parts were locked in a cage to survive launch, and after landing, they were meant to be released."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_seismometer_insight",
+              "text": "Viking 1’s seismometer never uncaged. Despite repeated attempts, it simply refused to come out. I have seen this behaviour before, usually involving a cat and a carrier."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_seismometer_insight",
+              "text": "Viking 2’s instrument did free itself, but it had a second problem: it sat on top of the lander, not on the ground. Wind pushing the spacecraft shook the legs, which shook the instrument, like trying to hear a whisper from inside a drum someone is tapping. On calm nights it caught a few possible signals, but nothing clear enough to call a Marsquake."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_seismometer_insight",
+              "text": "Yet the story has a happy ending. Decades later, NASA’s InSight lander placed a seismometer directly on the ground under a protective shield, and it detected more than a thousand Marsquakes. Sometimes an experiment’s greatest gift is showing the next generation exactly what to fix."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "viking_seismometer_insight",
+              "text": "Seismometer logged. Returning to instrument menu."
+            }
+          ]
+        },
+        {
+          "id": "gcms_biology",
+          "label": "Gas Chromatograph–Mass Spectrometer (GCMS) and biology experiments",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_gcms_diagram",
+              "text": "Now we reach the instrument that carried the heaviest question of all. The GCMS was a miniature chemistry laboratory, built to hunt for organic molecules, the carbon-based building blocks of life on Earth. Finding them would not prove life, since non-living processes make them too, but it would be an enormous clue."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_gcms_diagram",
+              "text": "Here is how it worked. The arm delivered a pinch of soil, which was heated in ovens at roughly 150, 300 and 500 degrees Celsius. The gas chromatograph then sorted the escaping chemicals as they travelled through a column at different speeds, rather like sorting objects by how much each one sticks. The mass spectrometer then identified each chemical by breaking it into charged fragments and weighing them."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_gcms_diagram",
+              "text": "The result was baffling. Viking found water, carbon dioxide and small amounts of chlorine-containing compounds, but not the organic material scientists expected. The chlorinated compounds were blamed on cleaning solvents from Earth, and the case seemed closed."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_phoenix_perchlorate",
+              "text": "Fast forward to 2008. NASA’s Phoenix lander found perchlorate salts in Martian soil, powerful chemicals that can destroy organic material when heated. Suddenly, scientists suspected that Viking’s own ovens may have burned away the evidence, which means a measurement from 1976 became a clue decades later."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_biology_lab",
+              "text": "Hold on, because it gets more dramatic. Each lander also carried a biology laboratory with three experiments, and the Labeled Release experiment fed soil a nutrient broth containing radioactive carbon. If microbes were present, they might breathe out radioactive gas, and at both sites, something did seem to respond."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_biology_lab",
+              "text": "For a brief moment, it looked like Viking had found life. But the GCMS found no organics, and reactive soil chemistry could explain the reaction. There is still no scientific consensus that Viking discovered anything alive, and that argument has run for decades."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "viking_biology_lab",
+              "text": "GCMS and biology experiments logged. Returning to instrument menu."
+            }
+          ]
+        },
+        {
+          "id": "comms",
+          "label": "Communications hardware",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_comms_relay",
+              "text": "This one rarely gets applause, yet without it, every other instrument would have been an expensive paperweight. Each lander carried three antennas: a steerable high-gain dish aimed at Earth, a low-gain antenna that did not need careful pointing, and a UHF antenna that talked to the orbiter overhead."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_comms_relay",
+              "text": "The orbiter could pass messages home when Earth was not conveniently in view, and the lander also stored data on a magnetic tape recorder until a good window opened. Since commands took minutes to cross the gap, the lander had to run its schedule on its own. It was basically the longest read receipt in history."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_comms_relay",
+              "text": "That pattern, with landers talking to orbiters that talk to Earth, is still how Mars rovers work today. NASA’s Mars Reconnaissance Orbiter plays the same relay role Viking pioneered. And all of this ran through a transmitter of only about 20 watts, which is roughly the power of a bedside lamp."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "viking_comms_relay",
+              "text": "Communications hardware logged. Returning to instrument menu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "viking_summary_archive",
+      "text": "All lander systems inspected. Archive access granted: Viking mission summary."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_summary_archive",
+      "text": "Let me show you what all those instruments added up to. Viking measured a thin atmosphere of mostly carbon dioxide, a soil with unexpectedly reactive chemistry, and landscapes shaped by impacts, volcanoes, wind and ancient water. It also confirmed that Mars holds carbon, hydrogen, nitrogen, oxygen and phosphorus, the basic ingredients of life as we know it."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_summary_archive",
+      "text": "Ingredients are not a cake, mind you. But they told scientists that the question deserved a serious answer."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_summary_archive",
+      "text": "And Viking taught a lesson that still guides the search for life. A single positive reaction is not proof, and a negative result does not mean a world is sterile. Today, Curiosity examines organic molecules and gases with its onboard laboratory, while Perseverance collects carefully chosen samples for a possible journey back to Earth."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_color_trivia",
+      "text": "A small trivia treat: I am told the first colour image from Viking 1 was released with a blue sky, because the colour balance was off. Engineers corrected it to the butterscotch you see above us now. Imagine the headline: “Mars has nice weather.”"
+    },
+    {
+      "type": "choice",
+      "mediaCue": "viking_summary_archive",
+      "prompt": "Felice has a question for you. Viking asked whether we are alone. What do you think it found?",
+      "options": [
+        {
+          "label": "Life",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_summary_archive",
+              "text": "A bold guess, and I admire your optimism. The honest answer is that the evidence is not strong enough to claim life, and the debate continues. But I will confess that the cat in me enjoys a good mystery."
+            }
+          ]
+        },
+        {
+          "label": "Strange chemistry",
+          "correct": true,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_summary_archive",
+              "text": "A sensible guess, and the leading explanation for the biology results. Reactive soil chemistry can mimic life, which is exactly the lesson Viking taught us. Though to be fair, the final word on those old results still belongs to future scientists."
+            }
+          ]
+        },
+        {
+          "label": "I honestly don’t know",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "viking_summary_archive",
+              "text": "The most scientific answer of the evening, and I mean that sincerely. Viking showed us that the question is much harder than anyone expected. Not knowing, I am told, is where all the good science begins."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_end_reflection",
+      "text": "These machines outlived their warranties spectacularly. Viking 2 kept working until April 1980, and Viking 1 carried on until November 1982, more than six years, when a faulty command cut off contact. NASA later named this site the Thomas A. Mutch Memorial Station, in honour of the leader of the imaging team."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_end_reflection",
+      "text": "The orbiters finished their work too: Orbiter 2 in July 1978, Orbiter 1 in August 1980. But the landers were never recovered. They are still here, silent and slowly dusted by the wind, exactly where they landed."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_end_reflection",
+      "text": "Yet their data survived. Scientists still revisit those 1970s measurements with modern methods, and new discoveries like Phoenix’s perchlorates keep changing what the old numbers mean. Viking’s scientific life has lasted much longer than its working life."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_end_reflection",
+      "text": "Take a last look, explorers. Viking could not drive anywhere, repair itself or ask for help, so everything it learned had to be within reach of its arm and its cameras. It trusted its engineers, and its engineers trusted a machine they would never touch again."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_end_reflection",
+      "text": "It did not prove that we are not alone. It gave us something arguably better: the ability to ask that question scientifically on another world. Every Mars mission since belongs to the family it started."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "viking_end_reflection",
+      "text": "As a cat, I find all this quite reassuring. A machine that sits patiently on a rusty plain for years, scoops a little dirt and keeps wondering? That is the most feline thing humanity has ever sent across space, with the possible exception of me."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "viking_end_reflection",
+      "text": "Viking tour complete. Data log updated. Mars destinations completed: 1 of 3. Explorer cortisol: normal. Excitement: persisting."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "viking_end_reflection",
+      "text": "Please select your next Mars destination:",
+      "list": [
+        "Viking 1 and 2 (completed)",
+        "Sojourner’s_APXS",
+        "TEGA&MECA"
+      ]
+    }
+  ]
+}

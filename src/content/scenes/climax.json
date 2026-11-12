@@ -1,0 +1,268 @@
+{
+  "id": "climax",
+  "title": "Supernova Emergency",
+  "theme": "alarm",
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_ds1_departure",
+      "text": "Excellent pick explorers, now we’re headed to visit a site to explore the DS1/New Horizons hardware and learn abou…"
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "climax_radiation_alert",
+      "text": "EMERGENCY! EMERGENCY! A stream of high velocity particles and beams of very high energy electromagnetic radiation capable of rapid ionisation detected. Threat level: 7"
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_radiation_alert",
+      "text": "What? Erm… Excuse me, dear humans, seems like we’re facing some trouble. Please stay seated where you are and stay calm. I’ll go check what’s wrong, fix it and be back in no time. Rest assured, there are emergency kits below everyone’s seats, including first aid, common medicine, dry food and water, heaters, communicators and heavy duty Laikasium batteries. I’ll be back as soon as I can."
+    },
+    {
+      "type": "stage",
+      "mediaCue": "climax_radiation_alert",
+      "text": "Felice pauses at the chamber door and looks back at them for a moment longer than necessary."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_radiation_alert",
+      "text": "One more thing, explorers. Whatever happens in the next few minutes, I will bring you home. That is not part of my protocols. It is a promise."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_control_room",
+      "text": "System, mute the alarms in the human chambers. Keep them active in the control room only."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "climax_control_room",
+      "text": "Done. Alarms in human chambers: muted."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_control_room",
+      "text": "Frightened passengers make poor decisions, and frightened androids make worse ones. Steady now, Felice."
+    },
+    {
+      "type": "stage",
+      "mediaCue": "climax_control_room",
+      "text": "Felice enters the control room in the ship."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_control_room",
+      "text": "That doesn’t look right. The readings in all sensors are skyrocketing! The entire ship is being bombarded with charged particles and radiation of high frequency! Sensors are picking up critical levels of neutrinos, alpha particles, unstable nuclei, heavy elements, ultraviolet radiation, x rays and gamma rays."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_control_room",
+      "text": "The gravitational wave detector senses no significant celestial body anywhere nearby. It’s as if the ship is nearing the event horizon of some black hole that certainly isn’t here. What in the multiverse is happening?"
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_hull_decay",
+      "text": "No. Questions later, solutions now. The humans come first."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "climax_hull_decay",
+      "text": "ALERT! The ships outer protective layer is decaying at an alarming rate of 47 milimeters per minute. Estimated time before the ship takes damage: 6 minutes and 7 seconds. Estimated time before the ship’s interior has uninhabitable radiation for humans: 9 minutes and 41 seconds."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_hull_decay",
+      "text": "Six minutes. Six minutes is enough, if I do not waste a single second of it."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_hyperdrive_escape",
+      "text": "SYSTEM, TURN THE SHIP AROUND IMMEDIATELY. THEN LAUNCH THE HYPERDRIVE AT MAX VELOCITY, ACTIVATE ALL SIX ADDITIONAL THRUSTERS. GET US OUT OF THIS ASAP!"
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "climax_hyperdrive_escape",
+      "text": "Initiating. Commencing launch at max speed."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "climax_shielding_robots",
+      "text": "Warning: current shielding insufficient for estimated exit time. Recommendation: increase shielding."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_shielding_robots",
+      "text": "ALL AUTOMATED MOBILE ROBOTS, THIS IS AN ORDER. GRAB EVERYTHING ON SIGHT AND SHIELD THE EXTERIOR WALLS OF THE HUMAN CHAMBERS, THE POWER SUPPLY SYSTEM AND THE HYPERDRIVE ENGINE. USE ANYTHING, FURNITURE, PIECES OF METAL, TRASH CANS, EVERYTHING. THE THICKER THE EXTERIOR, THE LESS RADIATION GETS THROUGH."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_shielding_robots",
+      "text": "Add the spare hull plates. Add the cargo crates. Add my own toolbox, I will not be needing it today."
+    },
+    {
+      "type": "stage",
+      "mediaCue": "climax_shielding_robots",
+      "text": "Automated robots start rushing. The humans inside the chambers don’t know the severity of the situation. They only hear noises."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_shielding_robots",
+      "text": "Let them hear noise instead of the truth, until the truth is something I can face them with. I will tell them everything myself the moment we are safe, looking each of them in the eye. That is another promise."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_supernova_discovery",
+      "text": "Wait, we’re bombarded with neutrinos and radiation? Sounds awfully a lot like a Supernova. Oh right, I forgot to check the expected supernova database before the deep space journey! I was too excited and didn’t cross reference with the command station on Earth."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_supernova_discovery",
+      "text": "Of course. Of course it was that check. I was so eager to show them the stars that I forgot to look at the sky first."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "climax_supernova_discovery",
+      "text": "Supernova data found. A dual star pair in the nearby planetary system merged into one a long time ago, and is currently going supernova, likely what we’re facing."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_supernova_discovery",
+      "text": "No time for guilt. Guilt can wait, the ship cannot."
+    },
+    {
+      "type": "stage",
+      "mediaCue": "climax_chamber_comfort",
+      "text": "Felice tells system to get the ship out of from the line of fire ASAP and goes inside the human chambers to calm them down. The corridor lights flicker. Felice walks into the chamber slowly, his steps steady even as the hull groans behind him."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "climax_chamber_comfort",
+      "text": "Shielding progress: 82 percent. Estimated time before exposure risk: 2 minutes 14 seconds."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_chamber_comfort",
+      "text": "Dear explorers, unfortunately, due to some trouble, we’re forced to end our journey early. Currently, we’re going back to the earth. But don’t worry, it’s a minor problem."
+    },
+    {
+      "type": "stage",
+      "mediaCue": "climax_chamber_comfort",
+      "text": "Felice kneels beside the nearest explorer and holds out a hand. The word “minor” sits on his tongue like a lie he does not like."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_chamber_comfort",
+      "text": "Nobody here is alone. I am right here, and I am not going anywhere. Cats are said to have nine lives, but you each have only one, and I intend to protect every second of it."
+    },
+    {
+      "type": "stage",
+      "mediaCue": "climax_narrator_damage",
+      "text": "Felice directs the ship from inside the human chambers and gets the ship out of the radiation. Thankfully, no actual damage was dealt. However, the ship is going too fast to steer."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "climax_narrator_damage",
+      "text": "Warning: narrator unit radiation exposure is critical. Memory errors detected. Recommendation: retreat to shielded area."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_narrator_damage",
+      "text": "Request denied. Keep the thrusters steady."
+    },
+    {
+      "type": "stage",
+      "mediaCue": "climax_narrator_damage",
+      "text": "Sparks flicker briefly in his optic sensors, but his hand never leaves the control panel."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "climax_escape_solar_system",
+      "text": "Radiation field exited. Radiation levels: normal. Narrator unit: minor circuit damage. Status: operational. Ship velocity exceeds the safe steering limit. Estimated time to decelerate: 30 minutes."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_escape_solar_system",
+      "text": "Then we shall take the scenic route."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_escape_solar_system",
+      "text": "The danger is almost gone, my dear humans. We are deep inside our solar system now. You can see Saturn’s rings in the distance, and we’re passing Jupiter right now. You can enjoy the view and take photos to commemorate this journey."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "climax_confession",
+      "text": "But before you reach for your cameras, I owe you the truth. What happened today was my fault. I was so excited about this journey that I skipped one safety check, and the whole ship paid for it. A cat who knocks a glass off a table can blame gravity. I cannot blame the supernova. I am sorry, explorers, and I promise to check twice, and then a third time, before every journey from now on."
+    },
+    {
+      "type": "choice",
+      "mediaCue": "climax_confession",
+      "prompt": "System: Felice is waiting for your response.",
+      "options": [
+        {
+          "label": "It’s okay, Felice.",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "climax_confession",
+              "text": "Thank you. That is kinder than I deserve, and I will remember it. Mistakes are heavy things to carry, but they get lighter when someone helps you hold them."
+            }
+          ]
+        },
+        {
+          "label": "Thank you for saving us.",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "climax_confession",
+              "text": "Please thank the robots as well, they carried every chair on this ship. And my toolbox, which will be remembered as a hero. I am only glad you are safe."
+            }
+          ]
+        },
+        {
+          "label": "Next time, check twice.",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "climax_confession",
+              "text": "Twice, three times, and a fourth just in case. Cats are said to always land on their feet, but I would rather not test it with you aboard."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

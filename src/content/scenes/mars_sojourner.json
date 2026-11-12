@@ -1,0 +1,337 @@
+{
+  "id": "mars_sojourner",
+  "title": "Sojourner & Yogi Rock",
+  "theme": "mars",
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "sojourner_arrival",
+      "text": "Shuttle touchdown confirmed. Location: Ares Vallis, Mars. Terrain: flood-carved plain, rocks of every shape and attitude. Suits sealed, heaters active, explorer cortisol cheerfully elevated."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_arrival",
+      "text": "Welcome back to Mars, explorers, this time in a valley called Ares Vallis. Scientists believe catastrophic floods swept across this plain billions of years ago, dumping rocks from all over the place in one convenient spot. For a geologist, that is basically a very untidy buffet."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pathfinder_lander_reveal",
+      "text": "See that lander over there, with its metal petals opened like a flower? That is Pathfinder, which left Cape Canaveral on December 4, 1996, and reached Mars about seven months later, on July 4, 1997. It arrived the fun way: heat shield, parachute, retrorockets, and then a bundle of giant airbags that bounced across the surface like a very expensive beach ball."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_rover_reveal",
+      "text": "And that little machine beside it is the reason we are here. Meet Sojourner, about the size of a microwave oven, weighing roughly 10.5 kilograms, and riding on six wheels. On July 5, 1997, it rolled down a ramp and became the first wheeled vehicle to drive on another planet."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_rover_reveal",
+      "text": "Its name honours Sojourner Truth, the abolitionist and women’s rights activist, chosen through a student competition. I think she would approve of a small explorer that kept going no matter how long the road."
+    },
+    {
+      "type": "choice",
+      "mediaCue": "sojourner_duration_quiz",
+      "prompt": "Felice has a question for you. Sojourner’s mission was planned for a certain number of sols. A sol is a Martian day, about 24 hours and 39 minutes. How many sols was it expected to last?",
+      "options": [
+        {
+          "label": "7 sols",
+          "correct": true,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_rover_reveal",
+              "text": "Correct, and nicely done. Seven sols, about a week. Hold that number, because the rover has a surprise for it."
+            }
+          ]
+        },
+        {
+          "label": "83 sols",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_rover_reveal",
+              "text": "That is how long it actually lasted, which is wonderfully close to a spoiler. The plan was only seven sols. I’ll explain the difference shortly."
+            }
+          ]
+        },
+        {
+          "label": "7 years",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_rover_reveal",
+              "text": "Years would be wonderful, but this was a tiny experimental rover with tiny batteries. The plan was only seven sols, about a week, and what happened next is my favourite part."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_traverse",
+      "text": "Sojourner ignored its deadline and kept going for 83 sols. It travelled about 100 metres, sent back hundreds of images and ran chemical analyses at 16 different locations. That is nearly twelve times its planned mission, which is the kind of overtime that deserves a snack."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_traverse",
+      "text": "Mind you, “travelled” is a generous word. Its top speed was about one centimetre per second, so I could nap, stretch, wash my face and still win. But speed was never the point, since every metre on Mars needed imaging, hazard checks and carefully planned commands from Earth."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_mobility",
+      "text": "It was also not a lone explorer. Sojourner talked to Pathfinder, and Pathfinder talked to Earth, the same relay trick Viking pioneered. A suspension called rocker-bogie kept its wheels on uneven ground, while cameras and laser stripes helped it spot obstacles."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_mobility",
+      "text": "So why does a ten-kilogram rover matter? Because Viking’s laboratories were stationary, and Sojourner could drive up to its subjects. A photograph shows a rock’s shape, colour and texture, but not what it is made of, and two rocks that look alike may have wildly different histories. It is like two grey tabby cats, one a pampered house cat and the other a street veteran."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "sojourner_apxs_intro",
+      "text": "Navigation update: Sojourner’s primary instrument located. Please do not touch the rover. Rule number two applies on Mars as well."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_apxs_intro",
+      "text": "Its main tool was the Alpha Proton X-ray Spectrometer, or APXS, a name that sounds like a sneeze and works like a miracle. The sensor head sat on a deployable arm at the rear. When scientists chose a target, Sojourner would park, extend the head and press it against the rock like a doctor with a stethoscope."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_apxs_principle",
+      "text": "Inside sat a radioactive source, curium-244, which emits alpha particles, essentially helium nuclei. Those particles bombard the atoms in the rock, and the rock answers in three ways. Some alphas bounce back with their energy changed by the mass of the nuclei they hit, some knock protons out of lighter elements, and some excite atoms into releasing X-rays."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_apxs_spectroscopy",
+      "text": "Those X-rays act like chemical fingerprints, since each element releases them at its own characteristic energies. The alpha and proton channels helped with lighter elements, while the X-rays covered a broad range of heavier ones. Together they gave scientists a rock’s elemental recipe, a technique called spectroscopy."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_apxs_spectroscopy",
+      "text": "It was not a quick test, mind you. Measurements could take hours, because the detector needed to collect enough radiation to be meaningful. And its X-ray detector performed best in the cold, so many measurements happened during the Martian night. As a cat, I deeply respect an instrument that does its best work after dark."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_apxs_intro",
+      "text": "The APXS also had an international family tree. Scientists from the Max Planck Institute for Chemistry in Germany helped develop it, building on earlier spectrometer technology from the Soviet Vega and Phobos missions. It is nice to know that, even in an era of national rivalry, good ideas still travelled across borders."
+    },
+    {
+      "type": "menu",
+      "mode": "visitAll",
+      "mediaCue": "mars_sojourner_apxs",
+      "prompt": "Four targets within rover range. Please select one. After each, you will return to this menu until all four have been visited.",
+      "options": [
+        {
+          "id": "barnacle_bill",
+          "label": "Barnacle Bill",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_target_barnacle",
+              "text": "Barnacle Bill holds a place in history as the first rock chemically analysed by a rover on Mars. The scientists gave it a name because it made life easier for the operations team, and it also made it sound like a character from a children’s cartoon. Seriously good science, however, was happening beneath that silly name."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_barnacle_chem",
+              "text": "The APXS found a lot of silica, along with aluminium, iron, magnesium and calcium, a recipe resembling andesite. Andesite is a volcanic rock richer in silica than primitive basalt, and on Earth it often forms when magma slowly changes composition as minerals crystallise and separate out. If Mars did something similar, then its volcanic story was more complicated than anyone assumed."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_barnacle_chem",
+              "text": "Scientists stayed careful, though. Weathering and dust coatings could have affected the surface that the instrument touched, so this was strong evidence rather than a final verdict. A small machine had driven up to an alien rock and asked what it was made of, which is an extraordinary first, even with caveats."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "sojourner_target_barnacle",
+              "text": "Barnacle Bill logged. Returning to target menu."
+            }
+          ]
+        },
+        {
+          "id": "yogi",
+          "label": "Yogi",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_target_yogi",
+              "text": "Yogi was a large rock whose shape reminded the team of a cartoon bear’s head. Sadly, no picnic basket was found. But the chemistry was far more interesting than the comedy."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_yogi_compare",
+              "text": "Yogi showed a basaltic character, which means a rock formed from iron- and magnesium-rich lava, one of the most common volcanic rocks on Earth and Mars alike. That made it chemically different from Barnacle Bill, and that difference was the whole point. It suggested that Ares Vallis was not a uniform collection of identical rocks."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_yogi_compare",
+              "text": "Instead, it hinted at material gathered from different regions, carried here by the ancient floods. The landscape was a geological mixed bag, and the APXS was helping scientists understand how that bag was packed."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "sojourner_target_yogi",
+              "text": "Yogi logged. Returning to target menu."
+            }
+          ]
+        },
+        {
+          "id": "wedge_moe_soil",
+          "label": "Wedge, Moe and the soil",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_target_wedge_moe_soil",
+              "text": "As the mission continued, Sojourner visited more targets, including Wedge and Moe, plus a rock called Scooby-Doo, because why not. Each analysis added a line to a growing catalogue, letting scientists compare rocks with one another and with the soil around them. Had I been on the team, I would have nominated a rock called Whiskers."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_soil_compare",
+              "text": "The soil result was a delightful surprise. The Pathfinder soil was broadly similar to material found at the Viking landing sites, even though they were thousands of kilometres apart. That suggested some Martian surface material is widespread, not just local."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_soil_compare",
+              "text": "Rock by rock, the APXS was building a chemical fingerprint of the Martian landscape."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "sojourner_target_wedge_moe_soil",
+              "text": "Wedge, Moe and soil data logged. Returning to target menu."
+            }
+          ]
+        },
+        {
+          "id": "wheel_tracks",
+          "label": "Sojourner’s wheel tracks",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_wheel_tracks",
+              "text": "Please look down at the tracks. Sojourner’s wheels were instruments too. They carried experiments to study how materials stuck to their surfaces, and engineers examined wheel movement and wear to learn about the mechanical properties of Martian soil."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "sojourner_wheel_tracks",
+              "text": "That means even its tracks were doing science. Most of us can only leave paw prints on a freshly cleaned floor, but Sojourner left paw prints for research. I have never been so jealous of a microwave-sized robot."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "sojourner_wheel_tracks",
+              "text": "Wheel tracks logged. Returning to target menu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "sojourner_summary",
+      "text": "All targets inspected. Data compiled: APXS mission summary."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_summary",
+      "text": "Let me put the pieces together. The rocks showed that the Martian crust was chemically diverse, with evidence of silica-rich, andesite-like material alongside basalt. Comparing rocks with soil helped scientists study weathering, dust and mixing, and the mixture of rocks fit the picture of a landscape built by ancient floods."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_summary",
+      "text": "There were limits, of course. The APXS measured elements, not complete minerals, so it gave an ingredients list rather than a recipe. Knowing a cake contains flour, sugar and eggs does not tell you whether it is a sponge or a brownie. It also analysed only the surface, which could be coated with dust that differed from the rock beneath."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_legacy",
+      "text": "Even so, it started a dynasty. NASA’s Spirit and Opportunity rovers, which landed in January 2004, carried more advanced spectrometers and helped identify signs of ancient water. Curiosity later carried an improved version that worked faster and in a wider range of conditions."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_legacy",
+      "text": "The principle never changed: put a detector close, excite the atoms, listen to the radiation and read the elements. Sojourner’s little instrument became a standard tool for exploring Mars."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_mission_end",
+      "text": "Every story has an ending, and this one came on September 27, 1997, when Pathfinder’s last successful message arrived at 10:23 UTC. Because Sojourner depended on the lander as its relay, it lost its only line to Earth when the lander fell silent. NASA tried for months to revive contact, then officially declared the mission complete on March 10, 1998."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_closing",
+      "text": "Both machines are still here in Ares Vallis, just like the Apollo experiments on the Moon and the Viking landers elsewhere on Mars. Nobody has recovered them. They sit quietly where they stopped, listening to the wind."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_closing",
+      "text": "Take a last look, explorers. For most of history, rocks on other planets were things we could only look at through telescopes. Sojourner was the first machine that drove up to one and asked what it was made of, which is the moment a distant world becomes a place you can actually study."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_closing",
+      "text": "The rover did not discover life, drill kilometres down or travel across entire regions. It was only about the size of a microwave oven, but its ambition was planetary. Sometimes the most important step in exploration is simply a small, patient machine, a cartoon-named rock and a very good question."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "sojourner_closing",
+      "text": "As a cat, I salute anyone who is small in size, slow in pace and enormous in curiosity. The only difference between Sojourner and me is that it never knocked anything off a table. Though, given enough time on Mars, who knows."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "sojourner_closing",
+      "text": "Sojourner’s APXS tour complete. Data log updated. Mars destinations completed: 2 of 3. Explorer cortisol: normal. Excitement: persisting."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "sojourner_closing",
+      "text": "Please select your next Mars destination:",
+      "list": [
+        "Viking 1 and 2 (completed)",
+        "Sojourner’s_APXS (completed)",
+        "TEGA&MECA"
+      ]
+    }
+  ]
+}

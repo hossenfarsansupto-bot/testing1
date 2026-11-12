@@ -1,0 +1,407 @@
+{
+  "id": "mars_phoenix",
+  "title": "Phoenix Arctic Lander",
+  "theme": "mars",
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "phoenix_arrival",
+      "text": "Shuttle touchdown confirmed. Location: Vastitas Borealis, Martian Arctic, about 68 degrees north. Temperature: far below freezing. Suit heaters: working very hard. Please keep your fingers where heaters can find them."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_arrival",
+      "text": "Welcome to the Martian Arctic, explorers. I would recommend a warm coat, but your suits are already doing that, and I am personally covered by a thick layer of engineering. We are standing on a vast, pale plain at the top of Mars, and the only crowd is the sky."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_arrival",
+      "text": "This is our third Mars stop, so let me recap. At Viking, we met a laboratory that sniffed the soil. At Ares Vallis, we met a rover that interrogated rocks. Now meet the machine that did something rather rude: it dug into the ground to see what Mars was hiding."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_arrival",
+      "text": "On May 25, 2008, a spacecraft called Phoenix landed right here, after travelling roughly 680 million kilometres across nearly ten months. It touched down on the icy outskirts of the Martian Arctic, in a region scientists had picked for one reason. They suspected there was water ice just beneath the surface."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_arrival",
+      "text": "By the way, the name is not accidental. Phoenix was assembled from the ashes of earlier projects, reusing ideas and hardware from the Mars Polar Lander and the cancelled Mars Surveyor 2001 lander. A mission that rose from the wreckage of older plans had to be called Phoenix, and I admire a machine with a good origin story."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "phoenix_lander_arm",
+      "text": "Navigation update: Phoenix lander located. Landing site: flat, cold, and suspiciously quiet."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_lander_arm",
+      "text": "There she is, solar panels spread like wings, and a long arm folded at her side. That arm was about 2.35 metres long, with a camera near its scoop so engineers could inspect the trench walls. Phoenix could not drive, so the arm was her whole world, a lander with a very good reach and nowhere to go."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_lander_arm",
+      "text": "As a cat, I find that arm deeply relatable. It digs, it scoops, it inspects the result, and it frequently buries things. Think of it as a litter box with a doctorate."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_trench_ice",
+      "text": "When Phoenix first dug, something odd happened. The arm uncovered bright white material in the trenches, and at first, nobody was sure what it was. Ice? A salt deposit? A very enthusiastic patch of Martian frosting?"
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_disappearing_ice",
+      "text": "Then came the clue. Over several days, the white material slowly vanished from the trench."
+    },
+    {
+      "type": "choice",
+      "mediaCue": "phoenix_disappearing_ice",
+      "prompt": "Felice has a question for you. What do you think happened to the bright white material?",
+      "options": [
+        {
+          "label": "It melted",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_disappearing_ice",
+              "text": "A sensible guess, but in Mars’s thin, cold air, liquid water is not stable, so it never got the chance. The ice turned directly into vapour, a trick called sublimation. Close, but not quite."
+            }
+          ]
+        },
+        {
+          "label": "It sublimated",
+          "correct": true,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_disappearing_ice",
+              "text": "Excellent, and very well spotted. Sublimation means a solid turns straight into a gas without becoming a liquid on the way. The ice simply evaporated off the page, which is just what ice does on Mars."
+            }
+          ]
+        },
+        {
+          "label": "A Martian ate it",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_disappearing_ice",
+              "text": "I love the optimism, and I will keep an eye out. But the culprit was far less dramatic: the ice sublimated, turning straight from solid to vapour without ever being a liquid. Sorry, no Martian was involved."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_deepens_trenches",
+      "text": "That vanishing act was visual proof that Phoenix had dug up water ice, only centimetres below a dusty surface. One of the trenches carries the fairy-tale name Dodo-Goldilocks. I like to think it was not too hot, not too cold, though honestly, on Mars it was just too cold."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_meca_lab",
+      "text": "But seeing is not the same as testing. Phoenix needed laboratories to ask what the soil and ice were made of, and whether any of it could ever support life. So she carried two of them, TEGA and MECA, which sounds like the world’s most chemically inclined comedy duo."
+    },
+    {
+      "type": "menu",
+      "mode": "visitAll",
+      "mediaCue": "phoenix_meca_lab",
+      "prompt": "Four instrument stations available for inspection. Please select one. After each, you will return to this menu until all four have been visited.",
+      "options": [
+        {
+          "id": "tega",
+          "label": "TEGA (the furnace)",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_tega_furnace",
+              "text": "TEGA, the Thermal and Evolved Gas Analyzer, takes a very direct approach: it cooks the soil and listens to what comes out. It was built with scientists from the University of Arizona and the University of Texas at Dallas. Its mission was to find the volatiles, substances that readily turn to gas when heated, like water and carbon dioxide."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_tega_furnace",
+              "text": "Inside were eight tiny ovens, each about the size of the ink tube in a ballpoint pen. Each could climb to roughly 1,000 degrees Celsius, which is hot enough to make Mars seem like a refrigerator. Eight ovens, one fewer than a cat’s nine lives, and each could only be used once."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_tega_furnace",
+              "text": "Two partners worked together. A scanning calorimeter tracked how much power it took to heat each sample, since melting, decomposing and releasing gas all change that number. A mass spectrometer identified the escaping gases, so scientists could match what came out with the temperature at which it came out. That matching told them whether water was ice, a damp film on grains, or locked inside minerals."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_tega_soil_screen",
+              "text": "Feeding those ovens was a nightmare. Martian soil turned out to be clumpy and sticky, not a loose powder, and it did not want to pass through the narrow inlet screens. Engineers shook the scoop, vibrated it and experimented with new delivery tricks, and in the end not all eight ovens were used as planned."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_tega_furnace",
+              "text": "Then, on July 31, 2008, NASA announced the result. A sample of ice-rich soil had been heated, and water vapour came out. After the cameras showed ice, the furnace confirmed it, which is the scientific equivalent of two witnesses telling the same story."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "phoenix_tega_furnace",
+              "text": "TEGA logged. Returning to instrument menu."
+            }
+          ]
+        },
+        {
+          "id": "meca_microscopes",
+          "label": "MECA microscopes",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_meca_microscopes",
+              "text": "MECA stands for Microscopy, Electrochemistry, and Conductivity Analyzer, and it was really four instruments in a trench coat. Two of them were microscopes. First, the optical microscope photographed individual soil grains, down to roughly the width of a human hair."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_meca_microscopes",
+              "text": "Why bother? Because grains tell stories. Round grains suggest long travel and a lot of abrasion, angular ones suggest short journeys, and fine dust points to wind. On Mars, dirt becomes geological evidence when you look closely enough."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_afm_operation",
+              "text": "The second microscope was stranger. The atomic force microscope has no lens at all: it drags an incredibly sharp tip, mounted on a flexible cantilever, across a surface. A laser watches the cantilever bend as the tip meets bumps, and the bends reveal a three-dimensional map of the surface."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_afm_operation",
+              "text": "In other words, it feels the surface rather than seeing it. It is the world’s tiniest paw tapping the world’s tiniest table, and as a cat, I take that very seriously. It also carried an array of cantilevers, so there were spare tips if one wore out."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "phoenix_afm_operation",
+              "text": "MECA microscopes logged. Returning to instrument menu."
+            }
+          ]
+        },
+        {
+          "id": "meca_wcl",
+          "label": "MECA Wet Chemistry Laboratory",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_wcl_procedure",
+              "text": "And here is the part of MECA I find most delightful: the Wet Chemistry Laboratory. TEGA studies what escapes when soil is heated, but plenty of chemistry only reveals itself when you dissolve the soil in water. So this laboratory had four small disposable beakers, loaded with sensors, and each got a scoop of Martian soil."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_wcl_cell",
+              "text": "Then came the water. Yes, Phoenix carried water from Earth, to wash Mars. It was the most expensive laundry day in the history of the solar system."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_wcl_cell",
+              "text": "The sensors measured acidity, electrical conductivity and dissolved ions like chloride, bromide, magnesium, calcium and potassium. The soil turned out to be mildly alkaline, with a pH between about 7.7 and 8.3, and full of soluble salts. Not the acidic nightmare some scientists feared, and honestly a bit like garden soil on Earth."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_wcl_procedure",
+              "text": "Then came the surprise: perchlorate, a salt of chlorine and oxygen. It is a powerful oxidiser, and salts like it can lower water’s freezing point, so a cold brine might stay liquid where pure water would freeze. That hints at fleeting liquid water on Mars, though whether it truly happens at this site remains uncertain."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_wcl_procedure",
+              "text": "Remember Viking’s mystery, the missing organics? Here is a prime suspect. Heating soil containing perchlorate can destroy organic compounds, which may be why Viking’s ovens did not find what scientists expected. A discovery in 2008 helped explain measurements from the 1970s, which is science doing detective work across thirty years."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_wcl_procedure",
+              "text": "There is a twist for future explorers. Some Earth microbes can actually use perchlorate for energy, so it is not automatically deadly to life. But it can be hazardous to humans, so any crewed mission would need to handle and purify it carefully. Mars has a way of making even the dirt a safety briefing."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "phoenix_wcl_cell",
+              "text": "Wet Chemistry Laboratory logged. Returning to instrument menu."
+            }
+          ]
+        },
+        {
+          "id": "meca_tecp",
+          "label": "MECA conductivity probe",
+          "nodes": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_tecp_probe",
+              "text": "The last MECA instrument is the Thermal and Electrical Conductivity Probe, a set of small needles that the arm pushed directly into the soil. It measured how easily heat and electricity travel through the ground, and it also sniffed the humidity of the air nearby. Think of it as a very serious kitchen thermometer, the kind you stab into the cake to see if it is done."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_tecp_probe",
+              "text": "Why does that matter? Mars swings between brutal days and brutal nights, so scientists need to know how heat moves through the soil. Electrical conductivity depends partly on moisture and dissolved salts, so combining the readings helps reveal how water and soil interact."
+            },
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_tecp_probe",
+              "text": "Water on Mars appears in several forms here, as vapour, frost, subsurface ice and possibly salty brines. The probe offered another angle on that cycle, complementing TEGA and the Wet Chemistry Laboratory. Four tools, one trench coat, and the whole outfit never left the arm’s reach."
+            },
+            {
+              "type": "say",
+              "speaker": "system",
+              "mediaCue": "phoenix_tecp_probe",
+              "text": "Conductivity probe logged. Returning to instrument menu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "phoenix_arctic_summary",
+      "text": "All instruments inspected. Archive access granted: Phoenix mission summary."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_arctic_summary",
+      "text": "Let me show you what two laboratories and one long arm discovered. First, water ice was practically beneath our feet, within reach of a relatively simple robotic excavator. Second, the soil contained perchlorate, which changed how scientists read old and new data alike. Third, the Arctic soil was mildly alkaline and chemically complex, though not necessarily hostile to every form of life."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_lidar_snow",
+      "text": "And there is more, because Phoenix also watched the sky. Its weather station and its lidar, a laser that probes the air, saw ice particles falling through the atmosphere. Yes, explorers, it snowed on Mars. The snow does not pile up like it does on Earth, but it fell all the same, and morning frost formed on the ground too."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_lidar_snow",
+      "text": "So the Martian Arctic is not a frozen postcard. Water here moves from vapour to frost to ice and back again, a quiet cycle with seasons. A cold desert, perhaps, but not a static one."
+    },
+    {
+      "type": "choice",
+      "mediaCue": "phoenix_arctic_summary",
+      "prompt": "Felice has a question for you. Suppose you are the first human settler here. What would you do with all this ice?",
+      "options": [
+        {
+          "label": "Drink it",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_arctic_summary",
+              "text": "A sensible priority, and Mars’s engineers agree. Subsurface ice could supply drinking water and oxygen, after a lot of equipment, energy and careful purification. Do not forget the perchlorates, though."
+            }
+          ]
+        },
+        {
+          "label": "Turn it into rocket fuel",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_arctic_summary",
+              "text": "Clever thinking. Splitting water produces hydrogen for fuel and oxygen to breathe, which is why this ice excites mission planners so much. It would take significant infrastructure, but the raw material is waiting."
+            }
+          ]
+        },
+        {
+          "label": "Build the galaxy’s largest ice rink",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "phoenix_arctic_summary",
+              "text": "A bold plan, and one I would happily support, although I would insist on a cat-shaped Zamboni. The air is thin and the surface is cold enough, but the logistics are a little optimistic. Perhaps start with water for drinking first."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_end_reflection",
+      "text": "Every good story has an ending, and Phoenix’s is gentle. She was planned to work for about 90 sols, but she kept going for roughly five months, far beyond her original schedule. Unlike Viking, she ran on solar panels, which is wonderful in an Arctic summer and a problem when winter approaches."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_end_reflection",
+      "text": "The Sun sank lower, the light weakened, and frost began to gather. Phoenix had never been designed to survive a Martian Arctic winter. Her final message arrived on November 2, 2008, and NASA kept trying to contact her until November 10."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_end_reflection",
+      "text": "There was no dramatic failure, no collision, no explosion. She simply ran out of sunlight, which is the most graceful way a solar-powered robot can leave. She is still here, panels buried under dust and frost, arm and instruments resting where they stopped."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_deepens_trenches",
+      "text": "The trenches she dug remain too, softened by time. And somewhere beneath them, the ice she uncovered is still frozen. Mars keeps its secrets, but now we know where to dig."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_end_reflection",
+      "text": "Take a last look, explorers. Viking taught us how to analyse Martian soil, Sojourner showed us how to investigate individual rocks, and Phoenix showed us how to dig beneath the surface and run chemistry on another world’s frozen water. Notice how the question has shifted. We are no longer only searching for signs of life, we are working out whether the conditions for life were ever possible."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_end_reflection",
+      "text": "That shift matters, and a perchlorate measurement shows why. It was not a spectacular photograph or a dramatic landscape, just a number, and yet it reshaped how scientists understood older experiments and prepared new ones. Sometimes the best discoveries do not answer a question, they force us to ask better ones."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "phoenix_end_reflection",
+      "text": "As a cat, I have one more thing to say. A robot that digs a hole in cold ground, inspects the result, buries a few things and then curls up for a long sleep under the snow? That is the most feline engineering I have ever seen, and I am honoured to be its colleague."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "phoenix_end_reflection",
+      "text": "Phoenix tour complete. Data log updated. Mars destinations completed: 3 of 3. Explorer cortisol: normal. Excitement: persisting."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "phoenix_end_reflection",
+      "text": "Please pick your next destination:",
+      "list": [
+        "Moon (completed)",
+        "Mars (completed)",
+        "Deep space (options will be added soon)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "id": "ds_pioneer",
+  "title": "Pioneer 10 & 11 Archive",
+  "theme": "deep_space",
+  "nodes": [
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "pioneer_arrival_deep_space",
+      "text": "Hyperdrive disengaged. Ship is now stationary relative to the target. Distance from Earth: more than 12 billion kilometres. Radio delay: more than eleven hours. Artificial gravity: off. Please activate boot magnets."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_arrival_deep_space",
+      "text": "And we have arrived, explorers. Please enjoy the floating, because it is the closest any of us will get to being a cat in a swimming pool of air. If you drift toward the ceiling, simply stabilise yourself and pretend it was intentional."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "pioneer_arrival_deep_space",
+      "text": "Target located. Pioneer 10 identified. Status: silent, intact, and unbothered."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_spacecraft_diagram",
+      "text": "There she is, floating in the dark. Look at that big bowl-shaped antenna, 2.74 metres wide, with a six-sided equipment box tucked behind it like a shy student. She weighed 259 kilograms at launch, which is about the same as three Felice units, and she was built for one job: be tough, be simple, go farther than anyone has gone."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_spacecraft_diagram",
+      "text": "She launched on March 2, 1972, at 51,682 kilometres per hour, faster than any human-made object before it. The Apollo astronauts took three days to reach the Moon, and Pioneer 10 passed the Moon’s orbit in about eleven hours. I once chased a laser dot across a living room that fast, and I still did not win."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_asteroid_belt",
+      "text": "Why does she matter? Because back then, engineers were genuinely terrified of what lay beyond Mars. The Asteroid Belt might be so full of dust that a spacecraft would be sandblasted to pieces, and past it, Jupiter wrapped itself in radiation strong enough to cook electronics in minutes."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_jupiter_flyby",
+      "text": "So NASA sent a scout, light and cheap, to find out. Pioneer 10 crossed the Asteroid Belt without a scratch, which made a lot of very nervous engineers very happy. Without those answers, Voyager, Galileo, Cassini and Juno might never have been designed the way they were."
+    },
+    {
+      "type": "choice",
+      "prompt": "Felice has a question for you. Pioneer 10’s mission plan was to work for just 21 months, enough to reach Jupiter and survive the flyby. How long do you think it actually kept talking to Earth?",
+      "mediaCue": "pioneer_jupiter_flyby",
+      "options": [
+        {
+          "label": "About 5 years",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "pioneer_last_signal",
+              "text": "A generous guess, but this little scout had so much more stubbornness in her. She kept sending signals for nearly 31 years, until January 23, 2003. Her mission plan was 21 months, so that is quite a stretch."
+            }
+          ]
+        },
+        {
+          "label": "About 15 years",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "pioneer_last_signal",
+              "text": "Good guess, and it would still be impressive. But she kept going almost twice as long, nearly 31 years, until January 23, 2003. The warranty, I think, was not read."
+            }
+          ]
+        },
+        {
+          "label": "Almost 31 years",
+          "correct": true,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "pioneer_last_signal",
+              "text": "Spot on, and I am delighted. Nearly 31 years, with 1960s electronics, after being blasted by Jupiter’s radiation. That is a spectacular amount of overtime."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_spin_stabilization",
+      "text": "Let me share how she kept her dish pointed at home. She did not use fancy computers or heavy spinning wheels. She simply spun, at 4.8 turns per minute, like a giant metal beyblade, and physics did the rest."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_spin_stabilization",
+      "text": "A spinning object stubbornly refuses to tilt, just as a bicycle stays upright while the wheels turn. Once small rockets had spun her up, her dish kept pointing at Earth almost for free. When she needed a nudge, tiny puffs of fuel had to be fired at exactly the right moment in each 12.5-second spin, like a cosmic rhythm game."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_rtg_power",
+      "text": "And the power? Four little nuclear generators on two long booms, using plutonium-238 just like our Apollo neighbours on the Moon and the Viking landers on Mars. At Jupiter, sunlight is 25 times weaker than at Earth, so solar panels were hopeless. Those generators made about 155 watts at launch with no moving parts, and the booms kept their radiation far from her sensitive instruments."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_rtg_power",
+      "text": "She even had thermal vents that opened when she got too warm and closed when she got chilly, all automatically. I like to call them robot sweat vents. Honestly, I am quite jealous of the efficiency."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_plaque_closeup",
+      "text": "Now, let me tell you about the golden plate bolted to her frame. Astronomer Carl Sagan asked NASA to attach a message for any alien civilisation, and with only about three weeks to spare, Sagan, Frank Drake and Linda Salzman Sagan created the Pioneer Plaque. It shows a hydrogen atom as a universal ruler, a map of 14 pulsars pointing back to our Sun, our Solar System with the probe leaving the third planet, and two humans standing in front of the spacecraft for scale."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_plaque_closeup",
+      "text": "One of those humans is raising a hand in greeting. Critics immediately asked a fair question: would an alien understand that, or just see a very confusing wave? And yes, some newspapers filled with angry letters about the naked figures. Imagine receiving that mail as a NASA administrator."
+    },
+    {
+      "type": "choice",
+      "prompt": "Felice has a question for you. If you could add one more thing to the Pioneer Plaque, what would it be?",
+      "mediaCue": "pioneer_plaque_closeup",
+      "options": [
+        {
+          "label": "A map to the nearest pizzeria",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "pioneer_plaque_closeup",
+              "text": "A bold choice, and universally relevant. Any civilisation that can decode a pulsar map would surely appreciate pizza. Though it might be a very long delivery time."
+            }
+          ]
+        },
+        {
+          "label": "A picture of a cat",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "pioneer_plaque_closeup",
+              "text": "Ah, a person of taste and wisdom. I support this addition wholeheartedly, and I will personally write to the committee. Any alien who sees a cat will know that we have our priorities right."
+            }
+          ]
+        },
+        {
+          "label": "A funny orange cat video.",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "pioneer_plaque_closeup",
+              "text": "Absolutely, I couldn’t agree more. Human or alien, whatever you may be, a funny cat video is guaranteed to keep you entertained."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer11_jupiter",
+      "text": "Now, a small confession. Pioneer 10 gets most of the attention, but her twin was the braver one. Pioneer 11 flew just 34,000 kilometres above Jupiter’s cloud tops, about four times closer than her sibling, and swept over the poles for humanity’s first look at them. Jupiter’s gravity then flung her toward Saturn like a game of crack-the-whip."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer11_saturn_fring",
+      "text": "She became the first spacecraft ever to visit Saturn, on September 1, 1979. She discovered the thin, braided F ring, took Titan’s temperature and found it far too cold for life as we know it. And NASA also used her as a test pilot, flying her straight through Saturn’s ring plane at 114,000 kilometres per hour to see whether Voyager 2 could follow safely."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer11_saturn_fring",
+      "text": "She came within about 4,000 kilometres of crashing into a moon nobody had even discovered yet. That is the kind of near miss that would make any cat check how many lives it has left. Fortunately, she survived, and Voyager got a safer map."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_anomaly_mystery",
+      "text": "And now, for a proper cosmic whodunit. Starting in the 1980s, navigators noticed both Pioneers slowing down very slightly more than gravity could explain. The effect was only about ten billionths of Earth’s gravity, but over decades it pulled the probes hundreds of thousands of kilometres off course. Scientists wrote hundreds of papers suggesting everything from dark matter to new laws of gravity."
+    },
+    {
+      "type": "choice",
+      "prompt": "Felice has a question for you. What do you think was the culprit?",
+      "mediaCue": "pioneer_anomaly_mystery",
+      "options": [
+        {
+          "label": "Dark matter",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "pioneer_thermal_recoil",
+              "text": "A popular theory, and a reasonable one at the time. But the answer was much closer to home: heat from the spacecraft itself, bouncing unevenly off the dish. Dark matter, this time, was innocent."
+            }
+          ]
+        },
+        {
+          "label": "Heat from the spacecraft itself",
+          "correct": true,
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "pioneer_thermal_recoil",
+              "text": "Excellent detective work. In 2012, after rescuing old data and building a detailed heat model, scientists showed that infrared heat from the plutonium and electronics bounced off the back of the dish. That uneven glow acted like a tiny invisible thruster."
+            }
+          ]
+        },
+        {
+          "label": "A very shy space ghost",
+          "response": [
+            {
+              "type": "say",
+              "speaker": "felice",
+              "mediaCue": "pioneer_thermal_recoil",
+              "text": "I respect the creativity, and I will keep an eye out for a shy space ghost. But the real culprit was her own warmth: heat from the plutonium and electronics bouncing off the dish. A very gentle push, but a push all the same."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_thermal_recoil",
+      "text": "There is a lovely detail here. Only the Pioneers could have caught this, because spinning spacecraft almost never fire their thrusters. Voyager, by contrast, fires them constantly, and those puffs would have drowned out such a tiny nudge. The Pioneers were basically the world’s most sensitive bathroom scales, floating in deep space."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_thermal_recoil",
+      "text": "And it makes me smile that her own warm glow slowed her down, a little like a cat who cannot leave a sunny windowsill. Apologies, I am getting sentimental."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_final_comms",
+      "text": "Now for the goodbyes. Pioneer 11 went silent first, with her last faint beep arriving on November 24, 1995. Pioneer 10 held on, and on January 23, 2003, giant radio dishes on Earth caught her final whisper from 12.23 billion kilometres away. The signal took 11 hours and 20 minutes to arrive."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_final_comms",
+      "text": "A last attempt on March 4, 2006 heard only silence. Her nuclear batteries had finally faded below what her transmitter needed. Yet a small group of engineers had kept listening for years after the world had moved on, purely out of loyalty to an old friend refusing to give up in the dark."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_h_backup",
+      "text": "And here is a plot twist: there was nearly a third Pioneer. Pioneer H was built as a backup, and its planned mission never flew. It now sits in the Smithsonian’s National Air and Space Museum, the twin that stayed home and got a very nice museum spot instead."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_star_trajectories",
+      "text": "Look around, explorers. Pioneer 10 is drifting toward the constellation Taurus, and in about two million years, she will pass near the red star Aldebaran. Her twin is heading toward Aquila, and will pass near the star Lambda Aquilae in roughly four million years."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_star_trajectories",
+      "text": "It was a tiny team at NASA’s Ames Research Center, with a fraction of a human spaceflight budget. When Pioneer 10 flew past Jupiter, her signals took 46 minutes to reach Earth, so no one could step in to save her. Every survival feature had to be built in before launch, and when the numbers arrived and she had survived, the project manager said they had only lifted the veil on the giant planet."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_closing_plaque",
+      "text": "Their cameras no longer work, their radios are silent, and yet a golden plate still carries a figure raising a hand, alongside a map back to a small blue world. Long after the Apollo footprints have worn away, and perhaps even after our Sun swells into a red giant, these two scouts will still be gliding through the quiet. A message for eternity, delivered by a very tough machine."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_closing_plaque",
+      "text": "And as a Felix robot, I will say this. Sending a message into the dark, with no idea whether anyone will reply, then calmly walking away? That is the most feline thing humanity has ever done, and I admire it deeply."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "pioneer_closing_plaque",
+      "text": "Pioneer tour complete. Data log updated. Deep space destinations completed: 1 of 4. Explorer cortisol: normal. Zero-gravity enjoyment: high."
+    },
+    {
+      "type": "say",
+      "speaker": "felice",
+      "mediaCue": "pioneer_closing_plaque",
+      "text": "Please buckle up, explorers, and watch your floating belongings. Our next destination awaits."
+    },
+    {
+      "type": "say",
+      "speaker": "system",
+      "mediaCue": "pioneer_closing_plaque",
+      "text": "Please pick your next destination:",
+      "list": [
+        "Pioneer (completed)",
+        "Voyager",
+        "DS1",
+        "New Horizons"
+      ]
+    }
+  ]
+}
